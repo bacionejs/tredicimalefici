@@ -6,6 +6,16 @@
 **Controls:** Click/tap  
 **Tested on:** Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
+- [Live](https://bacionejs.github.io/tredicimalefici)
+- [Download](#How-To-Download)
+  - download index.html
+  - open your file manager
+  - click index.html to run in your Chrome browser
+  - click/tap to play
+- [YouTube](http://www.youtube.com/@bacionejs) - demo
+- [Github](https://github.com/bacionejs/tredicimalefici) - github
+
+
 ---
 
 ### Post-mortem
