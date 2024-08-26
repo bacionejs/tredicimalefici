@@ -12,7 +12,7 @@
 - Controls: Click/tap
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
-- Download
+- Download  
   - download index.html
   - open your file manager
   - click index.html to run in your browser
