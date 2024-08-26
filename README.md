@@ -48,7 +48,7 @@ Added 30 victory/philosophical phrases, but the apathetic text-to-speech (TTS) v
 
 #### Day 6
 The game crashes on older phones after a while, so I fixed the explosion drawing algorithm.  
-Added a random fast level to break up the monotony. 
+Added a random fast level to break up the monotony.
 Experimented with additional sounds and music...
 
 #### Day 7
