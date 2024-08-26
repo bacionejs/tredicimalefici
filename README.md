@@ -2,7 +2,7 @@
 
 **Tredici Malefici** is a missile defense game where aliens have discovered your phobia of the number 13. To exploit your fear, they drop bombs adorned with 13 spikes. Turn the tables and use this fear to your advantage.
 
-- Purpose: `js13kgames game jam javascript coding competition`
+- Purpose: `js13kgames javascript coding competition`
 - 2024 theme: Triskaidekaphobia (fear of the number 13)
 - Goal: Win the t-shirt prize
 - Limitations: Portrait mode only
@@ -20,8 +20,7 @@
 
 ---
 
-### js13kgames Game Competition Post-mortem
-
+### [js13kgames](https://js13kgames.com) Competition Post-mortem
 - I always create my games with procedurally generated graphics and sound, a method I enjoy and use primarily because my editor and games are designed as a monolithic file. For more examples of vector graphics (and emoji graphics), check out my editor/games at [github.com/bacione/editor](https://github.com/bacione/editor).
 
 #### Day 1
