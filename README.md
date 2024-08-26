@@ -29,7 +29,7 @@
   - Circle explosions
 
 #### Day 2
-- Changed bombs to be
+- Changed circle bombs to be
   - random spikiness
   - random rotating speed
   - random colors
