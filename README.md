@@ -16,7 +16,7 @@
   - click/tap to play
 
 - [Live](https://bacionejs.github.io/tredicimalefici)
-- [YouTube](http://www.youtube.com/@bacionejs) - demo
+- [YouTube](http://www.youtube.com/@bacionejs)
 
 
 ---
