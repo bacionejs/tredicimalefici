@@ -56,4 +56,4 @@ However, I know others might enjoy a sensory overload, so I might add more conte
 
 #### Day 7
 I gave up on trying to make the game bigger.  
-Chose a name for the game and called it a wrap.
+Chose a name for the game, made a youtube video, and called it a wrap.
