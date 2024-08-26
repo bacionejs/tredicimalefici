@@ -20,7 +20,7 @@
 
 ---
 
-### Game Jam Post-mortem
+### js13kgames Game Competition Post-mortem
 
 - I always create my games with procedurally generated graphics and sound, a method I enjoy and use primarily because my editor and games are designed as a monolithic file. For more examples of vector graphics (and emoji graphics), check out my editor/games at [github.com/bacione/editor](https://github.com/bacione/editor).
 
