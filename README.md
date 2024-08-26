@@ -9,12 +9,13 @@
 - Controls: Click/tap
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
-- [Live](https://bacionejs.github.io/tredicimalefici)
 - Download
   - download index.html
   - open your file manager
   - click index.html to run in your browser
   - click/tap to play
+
+- [Live](https://bacionejs.github.io/tredicimalefici)
 - [YouTube](http://www.youtube.com/@bacionejs) - demo
 
 
