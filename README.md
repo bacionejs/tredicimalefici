@@ -11,7 +11,7 @@
 - [Download](#How-To-Download)
   - download index.html
   - open your file manager
-  - click index.html to run in your Chrome browser
+  - click index.html to run in your browser
   - click/tap to play
 - [YouTube](http://www.youtube.com/@bacionejs) - demo
 - [Github](https://github.com/bacionejs/tredicimalefici) - github
