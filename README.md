@@ -46,10 +46,10 @@
 - Added a boss -- a UFO with a grinning alien that drops fast bombs. Testers (my family) didn't like the UFO, especially the grinning alien. I wasn't motivated to fix it since I preferred the previous simplicity, so I removed it.
 
 #### Day 4
-- Changed status
+- Changed status text
   - Removed score and speed
   - Moved level to an inter-level splash screen
-  - Changed health and ammo to bars
+  - Changed health and ammo text to graphical bars
 - Testers experimented to determine the appropriate difficulty. Besides the minimum value (start) and maximum value (asymptote), I used one extra point and fed it into a logarithmic curve-fitting algorithm.
 
 #### Day 5
