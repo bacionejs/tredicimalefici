@@ -10,7 +10,7 @@
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
 - [Live](https://bacionejs.github.io/tredicimalefici)
-- [Download](#How-To-Download)
+- Download
   - download index.html
   - open your file manager
   - click index.html to run in your browser
