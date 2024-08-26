@@ -42,16 +42,14 @@ Testers experimented to determine the appropriate difficulty.
 Besides the minimum value (start) and maximum value (asymptote), I used one extra point and fed it into a logarithmic curve-fitting algorithm.
 
 #### Day 5
-The game is only 3k in size. I wanted to add more content to help me reach 13k.
-I added 30 victory/philosophical phrases, but the apathetic text-to-speech (TTS) voice made most of them sound ridiculous, so I sadly removed all but two:
+Added 30 victory/philosophical phrases, but the apathetic text-to-speech (TTS) voice made most of them sound ridiculous, so I sadly removed all but two:
 - "Great job"
 - "You were really good"
 
 #### Day 6
 The game crashes on older phones after a while, so I fixed the explosion drawing algorithm.  
-Added a random fast level. It seems to break up the monotony but, being only one extra line of code, hasn't helped me reach 13k.  
-Experimented with additional sounds and music but decided against it because I don't like much sensory input.  
-However, I know others might enjoy a sensory overload, so I might add more content later...
+Added a random fast level to break up the monotony. 
+Experimented with additional sounds and music...
 
 #### Day 7
 I gave up on trying to make the game bigger.  
