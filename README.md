@@ -58,4 +58,4 @@ I gave up on trying to make the game bigger.
 Chose a name for the game, made a youtube video, and called it a wrap.
 
 ## Summary
-This is the biggest game I've made. But, at 3k it is perhaps too small for the competition. Anyway, I like it and maybe others will get something out of it...or add to it.
+This is the biggest game I've made. But, at 3k it is perhaps too small for the competition. Anyway, I like it and maybe others will get something out of it.
