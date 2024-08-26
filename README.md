@@ -28,9 +28,7 @@
 
 #### Day 2
 - Added health and ammo bars.  
-- Added sounds. I already had a rocket sound from my Marslander game, but I needed an explosion sound.  
-I searched for an explosion sound algorithm but wasn't satisfied with what I found.  
-Finally, I discovered that simply adding a lowpass filter and a ramp to my existing rocket sound did the trick.
+- Added sounds. I already had a rocket sound from my Marslander game, but I needed an explosion sound. I searched for an explosion sound algorithm but wasn't satisfied with what I found. Finally, I discovered that simply adding a lowpass filter and a ramp to my existing rocket sound did the trick.
 
 #### Day 3
 - Added a boss-a UFO with a grinning alien that drops fast bombs.  
