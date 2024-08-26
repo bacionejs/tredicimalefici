@@ -186,7 +186,7 @@ if(this.explosion){//explode
 
 
 class Red{
-static reds=[];static level;static #speed;static get speed(){return floor(Red.#speed*100)};
+static reds=[];static level;static speed;
 static {hitred=(x,y,radius)=>{Red.reds.forEach((e)=>{if(hypot(x-e.x,y-e.y)<radius){Red.reds.splice(Red.reds.indexOf(e),1);}});}}
 
 constructor(){
@@ -221,10 +221,10 @@ function speed(level,easy,hard,bethisspeed,atthislevel){
 return hard-(hard-easy)*Math.pow(((hard-bethisspeed)/(hard-easy)),level/atthislevel);
 }
 if(random()<(1/13)){
-  Red.#speed=3;
+  Red.speed=3;
   for(let i=0;i<1;i++){new Red();}
 }else{
-  Red.#speed=speed(Red.level,0.5,1.5,1,30);
+  Red.speed=speed(Red.level,0.5,1.5,1,30);
   for(let i=0;i<13;i++){new Red();}
 }
 }
@@ -234,8 +234,8 @@ static update(){Red.reds.forEach(o=>o.update());}
 static draw(){Red.reds.forEach(o=>o.draw())}
 
 update(){
-this.y+=cos(this.angle)*Red.#speed;
-this.x+=sin(this.angle)*Red.#speed;
+this.y+=cos(this.angle)*Red.speed;
+this.x+=sin(this.angle)*Red.speed;
 this.rotation+=this.rotationspeed;
 if(this.x<0)this.x=W;
 if(this.x>W)this.x=0;
