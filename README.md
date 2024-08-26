@@ -1,6 +1,6 @@
 **Tredici Malefici** is a missile defense game where aliens have discovered your phobia of the number 13. To exploit your fear, they drop bombs adorned with 13 spikes. Turn the tables and use this fear to your advantage.
 
-**Purpose:** js13kgames 2024 game jam competition
+**Purpose:** `js13kgames 2024 game jam competition`  
 **Goal:** Win the t-shirt prize  
 **Limitations:** Portrait mode only  
 **Controls:** Click/tap  
