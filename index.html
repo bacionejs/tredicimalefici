@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tredici Malefici</title>
+</head>
+<body>
+<script>
+
+onload=()=>{
+
+/*
+Github: https://github.com/bacionejs/tredicimalefici
+License: GPL
+*/
+
+let  W=innerWidth,H=innerHeight;
+missilecommand();
+
+
+
+
+
+
+
+
+
+function missilecommand(){
+let floor=Math.floor,random=Math.random,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
+let L=Library();
+let snd=L.Sound();
+let cf=L.canvas();cf.black();
+let cs=L.canvas();cs.fillStyle="white";
+let hitblue,hitred;
+let state=3;
+addEventListener("click",click);
+
+let phrases=[
+"Great job",
+"You were really good",
+];
+
+cs.text("Welcome");
+
+function click(e){
+if(state==1){
+  return;
+}else if(state==2){
+  cs.clearRect(0,W/3,W,H);
+  state=0;
+  animation();
+  return;
+}else if(state==3){
+  cs.clear();
+  Blue.reset();
+  Red.reset();
+  animation();
+  return;
+}
+Blue.spawn(e);
+}
+
+function animation(){
+cf.black();
+if(Red.destroyed() && !Blue.destroyed()){
+  Blue.nextlevel();
+  Red.nextlevel();
+  state=1;
+  setTimeout(()=>{
+    state=2;
+    cs.text("Level: "+Blue.level);
+    if(Blue.level!=1 && random()<(1/13)){L.speak((phrases[floor(random()*phrases.length)]));}
+  },1000);
+  return;
+}else if(Blue.destroyed()){
+  Blue.reset();
+  Red.reset();
+  state=1;
+  setTimeout(()=>{
+    state=2;
+    cs.text("GAME OVER");
+    L.speak("Game over. Let's try again");
+  },1000);
+  return;
+}
+Blue.update();Red.update();Blue.draw();Red.draw();bars(13,Blue.health,Blue.count);
+requestAnimationFrame(animation);
+}
+
+function bars(cnt,left,right){
+let w=W/5;
+function draw(v,x,prev){
+  if(v===prev)return prev;
+  cs.clearRect(...(x<W/2?[0,0,W/2,H]:[W/2,0,W/2,H]));
+  cs.fillStyle=(v<=cnt*(2/3) && v>cnt*(1/3))?"yellow":(v<=cnt*(1/3))?"red":"green";
+  for(let i=0;i<cnt;i++){
+    if(i>=v)cs.fillStyle="gray";
+    cs.fillRect(x+i*(w/cnt),10,w/cnt-1,5);
+  }
+  return v;
+}
+bars.pl=draw(left,10,bars.pl);
+bars.pr=draw(right,W-w-10,bars.pr);
+cs.fillStyle="white";
+}
+
+
+
+
+
+
+
+
+
+class Blue{
+static blues=[];static health;static level;static count;
+static {hitblue=()=>Blue.health--;}
+
+constructor({pageX,pageY}){
+this.x=W/2;this.y=H;this.tx=pageX;this.ty=pageY;
+this.angle=atan2(pageY-H,pageX-W/2);
+this.explosion=false;
+this.radius=50;
+Blue.count--;
+Blue.blues.push(this);
+snd.rocket();
+}
+
+static reset(){
+while(Blue.blues.pop());
+Blue.level=0;
+Blue.health=13;
+}
+
+static nextlevel(){
+while(Blue.blues.pop());
+Blue.level++;
+Blue.count=13;
+}
+
+static spawn(e){
+if(Blue.count<1)return;
+new Blue(e);
+}
+
+static destroyed(){return (Blue.health<1);}
+static update(){Blue.blues.forEach(o=>o.update());}
+static draw(){Blue.blues.forEach(o=>o.draw())}
+
+update(){
+this.x+=cos(this.angle)*5;
+this.y+=sin(this.angle)*5;
+if(hypot(this.x-this.tx,this.y-this.ty)<10){
+  this.explosion=true;
+  snd.explosion();
+  hitred(this.x,this.y,this.radius);
+}
+}
+
+draw(){
+if(this.explosion){//explode
+  let g=cf.createRadialGradient(this.x,this.y,0,this.x,this.y,this.radius);
+  g.addColorStop(0,"gold");g.addColorStop(1,"black");
+  cf.arc(this.x,this.y,this.radius,0,PI*2);
+  cf.fillStyle=g;
+  cf.fill();
+  Blue.blues.splice(Blue.blues.indexOf(this),1);
+}else{//move
+  cf.save();
+  cf.translate(this.x,this.y);
+  cf.rotate(this.angle+PI/2);
+  cf.fillStyle="lime";
+  cf.fillRect(-1,-10,2,20);
+  cf.restore();
+}
+}
+
+}//end blue
+
+
+
+
+
+
+
+
+class Red{
+static reds=[];static level;static #speed;static get speed(){return floor(Red.#speed*100)};
+static {hitred=(x,y,radius)=>{Red.reds.forEach((e)=>{if(hypot(x-e.x,y-e.y)<radius){Red.reds.splice(Red.reds.indexOf(e),1);}});}}
+
+constructor(){
+this.color=Array.from({length:3},()=>floor(random()*155)+100).reduce((a,v,i)=>a+(i>0?",":"")+v,"rgb(")+")";
+this.x=random()*W; this.y=random()*W*0.2;
+this.rotation=random()*PI*2;this.rotationspeed=random()*0.05-0.025;
+this.angle=random()*(PI/3)-PI/6;
+let radius=W/50;let inner=random()*(2/3*radius);
+let path=new Path2D();
+path.moveTo(0,-radius);
+for(let i=1;i<13*2;i++){
+  let r=i%2===0?radius:inner;
+  let angle=i*PI/13;
+  let dx=r*sin(angle);
+  let dy=-r*cos(angle);
+  path.lineTo(dx,dy);
+}
+path.closePath();
+this.path=path;
+Red.reds.push(this);
+}
+
+static reset(){
+while(Red.reds.pop());
+Red.level=0;
+}
+
+static nextlevel(){
+while(Red.reds.pop());
+Red.level++;
+function speed(level,easy,hard,bethisspeed,atthislevel){
+return hard-(hard-easy)*Math.pow(((hard-bethisspeed)/(hard-easy)),level/atthislevel);
+}
+if(random()<(1/13)){
+  Red.#speed=3;
+  for(let i=0;i<1;i++){new Red();}
+}else{
+  Red.#speed=speed(Red.level,0.5,1.5,1,30);
+  for(let i=0;i<13;i++){new Red();}
+}
+}
+
+static destroyed(){return (Red.reds.length<1);}
+static update(){Red.reds.forEach(o=>o.update());}
+static draw(){Red.reds.forEach(o=>o.draw())}
+
+update(){
+this.y+=cos(this.angle)*Red.#speed;
+this.x+=sin(this.angle)*Red.#speed;
+this.rotation+=this.rotationspeed;
+if(this.x<0)this.x=W;
+if(this.x>W)this.x=0;
+if(this.y>H){hitblue();Red.reds.splice(Red.reds.indexOf(this),1);}
+}
+
+draw(){
+cf.save();
+cf.translate(this.x,this.y);
+cf.rotate(this.rotation);
+cf.strokeStyle=this.color;
+cf.stroke(this.path);
+cf.restore();
+}
+
+}//end red
+
+}//end missilecommand
+
+
+
+
+
+
+
+
+
+function Library(){
+element("style").textContent=`*{margin:0;padding:0;position:fixed;box-sizing:border-box;touch-action:none;user-select:none;}`;
+
+function Sound(){
+let auc=new AudioContext();
+let aubrocket=noise(0.2);
+let aubexplosion=noise(1);
+
+function noise(seconds){
+let b=auc.createBuffer(1,auc.sampleRate*seconds,auc.sampleRate);
+b.getChannelData(0).forEach((_,i,a)=>a[i]=Math.random()*2-1);
+return b;
+}
+
+function rocket(){
+let s=auc.createBufferSource();
+s.buffer=aubrocket;
+let gain=auc.createGain();
+gain.gain.value=0.3;
+s.connect(gain);
+gain.connect(auc.destination);
+s.start(0,0,s.buffer.duration);
+s.onended = function() {
+  s.disconnect();
+  gain.disconnect();
+};
+}
+
+function explosion(){
+let s=auc.createBufferSource();
+s.buffer=aubexplosion;
+let gain=auc.createGain();gain.gain.value=3;
+let filter=auc.createBiquadFilter();filter.type="lowpass";filter.frequency.value=300;
+gain.gain.linearRampToValueAtTime(0,auc.currentTime+1);
+s.connect(filter);
+filter.connect(gain);
+gain.connect(auc.destination);
+s.start(0,0,s.buffer.duration);
+s.onended = function() {
+  s.disconnect();
+  gain.disconnect();
+  filter.disconnect();
+};
+}
+
+return {rocket,explosion};
+}//end sound
+
+function canvas(font=12){
+let c=element("canvas");
+c.width=W;c.height=H;
+let cn=c.getContext("2d")
+cn.textAlign="center";cn.textBaseline="middle";cn.font=font+"px monospace";
+
+cn.clear=function(){
+this.clearRect(0,0,this.canvas.width,this.canvas.height);
+}
+
+cn.black=function(){
+let s=this.fillStyle;
+this.fillStyle="black";this.fillRect(0,0,this.canvas.width,this.canvas.height);
+this.fillStyle=s;
+}
+
+cn.text=function(t){
+this.fillText(t,W/2,H/2);
+}
+
+return cn;
+}//end canvas
+
+function speak(text){
+let synth=window.speechSynthesis;
+let utter=new SpeechSynthesisUtterance(text);
+utter.pitch=1;
+utter.rate=1;
+utter.volume=1;
+synth.speak(utter);
+}
+
+function element(e){return document.body.appendChild(document.createElement(e));}
+
+return {Sound,canvas,speak};
+};//end library
+
+}//end onload
+
+</script>
+</body>
+</html>
