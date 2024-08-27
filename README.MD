@@ -25,8 +25,7 @@
 
 #### Day 1
 - Finished the core game.
-  - Circle bombs
-  - Circle explosions
+  - bombs, rockets and explosions
 
 #### Day 2
 - Changed bombs to random spikiness, rotation and color
