@@ -20,7 +20,7 @@
 
 ---
 
-### Competition Diary - js13kgames 2024 Post-mortem
+### Competition Diary
 - Graphics and sound are procedurally generated. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 
 #### Day 1
