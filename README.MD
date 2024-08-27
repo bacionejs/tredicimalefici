@@ -21,7 +21,7 @@
 ---
 
 ### Competition Diary (Post-mortem)
-- Graphics and sound are procedurally generated. For more examples, see [Bacione JavaScript Editor](https://github.com/bacione/editor)
+- Graphics and sound are procedurally generated. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 
 #### Day 1
 - Finished the core game: bombs, rockets and explosions
