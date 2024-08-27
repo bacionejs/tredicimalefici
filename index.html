@@ -127,8 +127,8 @@ static {hitblue=()=>Blue.health--;}
 constructor({pageX,pageY}){
 this.x=W/2;this.y=H;this.tx=pageX;this.ty=pageY;
 this.angle=atan2(pageY-H,pageX-W/2);
-this.explosion=false;
-this.radius=50;
+this.explosion=0;
+this.radius=30;
 Blue.count--;
 Blue.blues.push(this);
 snd.rocket();
@@ -156,22 +156,23 @@ static update(){Blue.blues.forEach(o=>o.update());}
 static draw(){Blue.blues.forEach(o=>o.draw())}
 
 update(){
-if(this.fordeletion===true){ 
+if(this.explosion==1){
+  this.explosion=2;setTimeout(()=>{this.explosion=3;},50);
+}else if(this.explosion==3){
   Blue.blues=Blue.blues.filter(o=>o!==this);
-  return;
 }
+if(this.explosion>0)return;
 this.x+=cos(this.angle)*5;
 this.y+=sin(this.angle)*5;
 if(hypot(this.x-this.tx,this.y-this.ty)<10){
-  this.explosion=true;
+  this.explosion=1;
   snd.explosion();
   hitred(this.x,this.y,this.radius);
-  this.fordeletion=true;
 }
 }
 
 draw(){
-if(this.explosion){//explode
+if(this.explosion>0){//explode
   let g=cf.createRadialGradient(this.x,this.y,0,this.x,this.y,this.radius);
   g.addColorStop(0,"gold");g.addColorStop(1,"black");
   cf.arc(this.x,this.y,this.radius,0,PI*2);
