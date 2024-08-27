@@ -6,7 +6,7 @@
 - [YouTube](http://www.youtube.com/@bacionejs)
 
 - Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)
-- 2024 theme: Triskaidekaphobia (fear of the number 13)
+- Theme: 2024 theme is Triskaidekaphobia (fear of the number 13)
 - Goal: Win the t-shirt prize
 - Limitations: Portrait mode only
 - Controls: Click/tap
