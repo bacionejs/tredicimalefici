@@ -7,7 +7,6 @@
 </head>
 <body>
 <script>
-
 onload=()=>{
 
 /*
@@ -30,11 +29,20 @@ function game(){
 let floor=Math.floor,random=Math.random,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
 let L=Library();
 let snd=L.Sound();
-let cf=L.canvas();cf.black();
+let cb=L.canvas();
+let cf=L.canvas();
 let cs=L.canvas();cs.fillStyle="white";
 let hitblue,hitred;
 let state=3;
 addEventListener("click",click);
+let grad=cb.createRadialGradient((W/2),H,0,(W/2),H,(W/8));
+grad.addColorStop(0.1,'lime');
+grad.addColorStop(0.3,'rgb(0,0,0)');
+grad.addColorStop(0.98,'rgb(60,60,60)');
+grad.addColorStop(0.99,'rgb(80,80,80)');
+grad.addColorStop(1.0,'rgb(0,0,0)');
+cb.fillStyle=grad;
+cb.fillRect(0,0,W,H);
 
 let phrases=[
 "Great job",
@@ -62,7 +70,7 @@ Blue.spawn(e);
 }
 
 function animation(){
-cf.black();
+cf.clear();
 if(Red.destroyed() && !Blue.destroyed()){
   Blue.nextlevel();
   Red.nextlevel();
@@ -349,7 +357,6 @@ return {Sound,canvas,speak};
 };//end library
 
 }//end onload
-
 </script>
 </body>
 </html>
