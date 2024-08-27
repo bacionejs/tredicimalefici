@@ -24,8 +24,7 @@
 - Graphics and sound are procedurally generated due to the limitations of the [Bacione JavaScript Editor](https://github.com/bacione/editor), which does not support external files, requiring everything to be contained within a single monolithic file.
 
 #### Day 1
-- Finished the core game.
-  - bombs, rockets and explosions
+- Finished the core game: bombs, rockets and explosions
 
 #### Day 2
 - Changed bombs to random spikiness, rotation and color
