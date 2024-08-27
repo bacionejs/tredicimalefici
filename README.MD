@@ -5,7 +5,7 @@
 - [Live](https://bacionejs.github.io/tredicimalefici)
 - [YouTube](http://www.youtube.com/@bacionejs)
 
-- Purpose: [js13kgames](https://js13kgames.com) javascript coding competition
+- Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)
 - 2024 theme: Triskaidekaphobia (fear of the number 13)
 - Goal: Win the t-shirt prize
 - Limitations: Portrait mode only
