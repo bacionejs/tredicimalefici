@@ -21,7 +21,7 @@
 ---
 
 ### Competition Diary (Post-mortem)
-- I always create my games with procedurally generated graphics and sound, a method I enjoy and use primarily because my editor and games are designed as a monolithic file. For more examples of vector graphics (and emoji graphics), check out my editor/games at [github.com/bacione/editor](https://github.com/bacione/editor).
+- Graphics and sound are procedurally generated due to the limitations of the [Bacione JavaScript Editor](https://github.com/bacione/editor), which does not support external files, requiring everything to be contained within a single monolithic file.
 
 #### Day 1
 - Finished the core game.
