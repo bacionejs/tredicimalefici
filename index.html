@@ -195,14 +195,11 @@ Red.level=0;
 static nextlevel(){
 while(Red.reds.pop());
 Red.level++;
-function speed(level,easy,hard,bethisspeed,atthislevel){
-return hard-(hard-easy)*Math.pow(((hard-bethisspeed)/(hard-easy)),level/atthislevel);
-}
-if(random()<(1/13)){
+if(Red.level>5 && random()<(1/13)){
   Red.speed=3;
   for(let i=0;i<1;i++){new Red();}
 }else{
-  Red.speed=speed(Red.level,0.5,1.5,1,30);
+  Red.speed=L.fit(Red.level,0.5,1.5,30,1);
   for(let i=0;i<13;i++){new Red();}
 }
 }
@@ -359,9 +356,13 @@ bars.pl=draw(left,10,bars.pl);
 bars.pr=draw(right,W-w-10,bars.pr);
 }
 
+function fit(x,start,asymptote,x2,y2){
+  return asymptote-(asymptote-start)*Math.pow(((asymptote-y2)/(asymptote-start)),x/x2);
+}
+
 function element(e){return document.body.appendChild(document.createElement(e));}
 
-return {Sound,canvas,speak,bars};
+return {Sound,canvas,speak,bars,fit};
 };//end library
 
 }//end onload
