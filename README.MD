@@ -33,7 +33,7 @@
 - Added a boss -- a UFO with a grinning alien that drops fast bombs. Testers (my family) didn't like the UFO, especially the grinning alien. I wasn't motivated to fix it since I preferred the previous simplicity, so I removed it.
 
 #### Day 4
-- Changed health and ammo text to **13-segment** *graphical bars*
+- Added health and ammo **13-segment** *graphical bars*
 - Testers experimented to determine the appropriate difficulty. Besides the minimum value (start) and maximum value (asymptote), I used one extra point and fed it into a *logarithmic curve-fitting algorithm*.
 
 #### Day 5
