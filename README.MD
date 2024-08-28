@@ -53,9 +53,9 @@
 - Chose a name for the game, made a *youtube video*, and called it a wrap.
 
 ## Summary
-It was a lot of *fun* making this game.
+It was *fun* making this game.
 
-It was my first time using *sin, cos, PI, hypot, atan2, pow, lowpass, ramp and tts*. So I learned a lot.
+I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp and tts*.
 
 Graphics and sound were *procedurally generated*. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 
