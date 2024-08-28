@@ -151,19 +151,17 @@ if(togglesound)snd.rocket();
 
 function update(){
 blues.forEach(o=>{
-  if(o.explosion===0){
+  if(o.explosion==0){
     o.x+=cos(o.angle)*5;
     o.y+=sin(o.angle)*5;
     if(hypot(o.x-o.tx,o.y-o.ty)<10){
-      o.explosion=1;
+      o.explosion=1;setTimeout(()=>{o.explosion=2;},50);
       if(togglesound)snd.explosion();
       hitred(o.x,o.y,o.radius);
     }
-  }else if(o.explosion==1){
-    o.explosion=2;setTimeout(()=>{o.explosion=3;},50);
   }
 });
-blues=blues.filter(o=>o.explosion!=3);
+blues=blues.filter(o=>o.explosion!=2);
 }
 
 function draw(){
