@@ -42,7 +42,7 @@
 - Testers experimented to determine the appropriate difficulty. Besides the minimum value (start) and maximum value (asymptote), I used one extra point and fed it into a *logarithmic curve-fitting algorithm*.
 
 #### Day 5
-- Added victory/philosophical phrases, but the apathetic *text-to-speech* (TTS) voice made most of them sound ridiculous, so I sadly removed all but two:
+- Added random **(1 in 13 chance)** victory/philosophical phrases, but the apathetic *text-to-speech* (TTS) voice made most of them sound ridiculous, so I sadly removed all but two:
   - "Great job"
   - "You were really good"
 
