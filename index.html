@@ -151,20 +151,19 @@ if(togglesound)snd.rocket();
 
 function update(){
 blues.forEach(o=>{
-  if(o.explosion==1){
+  if(o.explosion===0){
+    o.x+=cos(o.angle)*5;
+    o.y+=sin(o.angle)*5;
+    if(hypot(o.x-o.tx,o.y-o.ty)<10){
+      o.explosion=1;
+      if(togglesound)snd.explosion();
+      hitred(o.x,o.y,o.radius);
+    }
+  }else if(o.explosion==1){
     o.explosion=2;setTimeout(()=>{o.explosion=3;},50);
-  }else if(o.explosion==3){
-    blues=blues.filter(i=>i!==o);
-  }
-  if(o.explosion>0)return;
-  o.x+=cos(o.angle)*5;
-  o.y+=sin(o.angle)*5;
-  if(hypot(o.x-o.tx,o.y-o.ty)<10){
-    o.explosion=1;
-    if(togglesound)snd.explosion();
-    hitred(o.x,o.y,o.radius);
   }
 });
+blues=blues.filter(o=>o.explosion!=3);
 }
 
 function draw(){
@@ -230,8 +229,9 @@ reds.forEach(o=>{
   o.rotation+=o.rotationspeed;
   if(o.x<0)o.x=W;
   if(o.x>W)o.x=0;
-  if(o.y>H){hitblue();reds=reds.filter(i=>i!==o);}
+  if(o.y>H){hitblue();o.fordeletion=true;}
 });
+reds=reds.filter(o=>o.fordeletion!==true);
 }
 
 function draw(){
