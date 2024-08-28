@@ -1,6 +1,6 @@
 [![Play](README.JPG)](https://bacionejs.github.io/tredicimalefici)
 
-**Tredici Malefici** (13 evils) is a missile defense game where aliens have discovered your phobia of the number 13. To exploit your fear, they drop bombs adorned with 13 spikes. Turn the tables and use this fear to your advantage.
+Tredici Malefici **(13 evils)** is a missile defense game where aliens have discovered your phobia of the number 13. To exploit your fear, they drop bombs adorned with 13 spikes. Turn the tables and use this fear to your advantage.
 
 - [Live](https://bacionejs.github.io/tredicimalefici)
 - [YouTube](http://www.youtube.com/@bacionejs)
@@ -26,7 +26,7 @@
 - Finished the core game: bombs, rockets and explosions
 
 #### Day 2
-- Changed bombs to **13 13-point** stars with random *spikiness*, rotation and color
+- Changed bombs to **13 13-spike** stars with random *spikiness*, rotation and color
 - Changed explosions to have *gradient* fading to the background color. This removes the sharp edges.
 - Added status text: health, ammo, score, speed, level
 - Added sounds. I already had a rocket sound from my Marslander game, but I needed an explosion sound. I searched for an explosion sound algorithm but wasn't satisfied with what I found. Finally, I discovered that simply adding a *lowpass filter and a ramp* to my existing rocket sound did the trick.
