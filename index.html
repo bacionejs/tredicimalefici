@@ -71,16 +71,14 @@ function animation(){
 cf.clear();
 if(red.destroyed() && !blue.destroyed()){
   blue.nextlevel();red.nextlevel();
-  state=2;setTimeout(()=>{
-    state=3;
+  state=2;setTimeout(()=>{state=3;
     cs.text("Level: "+blue.getlevel());
     if(blue.getlevel()!=1 && random()<(1/13)){if(togglesound)L.speak((phrases[floor(random()*phrases.length)]));}
   },1000);
   return;
 }else if(blue.destroyed()){
   blue.reset();red.reset();
-  state=2;setTimeout(()=>{
-    state=3;
+  state=2;setTimeout(()=>{state=3;
     cs.text("GAME OVER");
     if(togglesound)L.speak("Game over. Try again");
   },1000);
