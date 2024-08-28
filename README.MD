@@ -50,7 +50,7 @@
 - Fixed the explosion algorithm, which was causing crashes on an old phone.
 
 #### Day 7
-- Chose a name for the game, made a youtube *video*, and called it a wrap.
+- Chose a name for the game, made a *youtube video*, and called it a wrap.
 
 ## Summary
 It was a lot of *fun* making this game.
