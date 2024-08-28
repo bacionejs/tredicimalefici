@@ -16,6 +16,7 @@ Github: https://github.com/bacionejs/tredicimalefici
 License: GPL
 */
 
+let floor=Math.floor,random=Math.random,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
 let  W=innerWidth,H=innerHeight;
 game();
 
@@ -28,7 +29,7 @@ game();
 
 
 function game(){
-let floor=Math.floor,random=Math.random,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
+addEventListener("click",click);
 let L=Library();
 let snd=L.Sound();
 let cb=L.canvas();
@@ -37,7 +38,8 @@ let cs=L.canvas();
 let hitblue,hitred;
 let state=1;
 let togglesound=1;
-addEventListener("click",click);
+let red=Red();
+let blue=Blue();
 
 let phrases=[
 "Great job",
@@ -49,11 +51,11 @@ cs.text("Welcome");
 
 function click(e){
 if(state==0){
-  Blue.shoot(e);
+  blue.shoot(e);
 }else if(state==1){
   cs.clear();
-  Blue.base(cb);
-  Blue.reset();Red.reset();
+  blue.base(cb);
+  blue.reset();red.reset();
   animation();
   return;
 }else if(state==2){return;}else if(state==3){
@@ -67,16 +69,16 @@ if(state==0){
 
 function animation(){
 cf.clear();
-if(Red.destroyed() && !Blue.destroyed()){
-  Blue.nextlevel();Red.nextlevel();
+if(red.destroyed() && !blue.destroyed()){
+  blue.nextlevel();red.nextlevel();
   state=2;setTimeout(()=>{
     state=3;
-    cs.text("Level: "+Blue.level);
-    if(Blue.level!=1 && random()<(1/13)){if(togglesound)L.speak((phrases[floor(random()*phrases.length)]));}
+    cs.text("Level: "+blue.getlevel());
+    if(blue.getlevel()!=1 && random()<(1/13)){if(togglesound)L.speak((phrases[floor(random()*phrases.length)]));}
   },1000);
   return;
-}else if(Blue.destroyed()){
-  Blue.reset();Red.reset();
+}else if(blue.destroyed()){
+  blue.reset();red.reset();
   state=2;setTimeout(()=>{
     state=3;
     cs.text("GAME OVER");
@@ -84,8 +86,8 @@ if(Red.destroyed() && !Blue.destroyed()){
   },1000);
   return;
 }
-Blue.update();Red.update();Blue.draw();Red.draw();
-L.bars(cs,13,Blue.health,Blue.count);
+blue.update();red.update();blue.draw();red.draw();
+L.bars(cs,13,...blue.getbars());
 requestAnimationFrame(animation);
 }
 
@@ -97,32 +99,35 @@ requestAnimationFrame(animation);
 
 
 
-class Blue{
-static blues=[];static health;static level;static count;
-static {hitblue=()=>Blue.health--;}
+function Blue(){
+let blues=[];let health;let level;let count;
+hitblue=()=>health--;
 
-static reset(){
-while(Blue.blues.pop());
-Blue.level=0;
-Blue.health=13;
+function getlevel(){
+return level;
 }
 
-static nextlevel(){
-while(Blue.blues.pop());
-Blue.level++;
-Blue.count=13;
+function getbars(){
+return [health,count];
 }
 
-static destroyed(){return (Blue.health<1);}
-static update(){Blue.blues.forEach(o=>o.update());}
-static draw(){Blue.blues.forEach(o=>o.draw())}
-
-static shoot(e){
-if(Blue.count<1)return;
-new Blue(e);
+function reset(){
+while(blues.pop());
+level=0;
+health=13;
 }
 
-static base(cn){
+function nextlevel(){
+while(blues.pop());
+level++;
+count=13;
+}
+
+function destroyed(){
+return (health<1);
+}
+
+function base(cn){
 let grad=cn.createRadialGradient((W/2),H,0,(W/2),H,(W/8));
 grad.addColorStop(0.2,"blue");
 grad.addColorStop(0.6,"black");
@@ -131,48 +136,59 @@ grad.addColorStop(1.0,"black");
 cn.fillStyle=grad;cn.fillRect(0,0,W,H);
 }
 
-constructor({pageX,pageY}){
-this.x=W/2;this.y=H;this.tx=pageX;this.ty=pageY;
-this.angle=atan2(pageY-H,pageX-W/2);
-this.explosion=0;
-this.radius=50;
-Blue.count--;
-Blue.blues.push(this);
+function shoot({pageX,pageY}){
+if(count<1)return;
+count--;
+blues.push({
+  x:W/2,
+  y:H,
+  tx:pageX,
+  ty:pageY,
+  angle:atan2(pageY-H,pageX-W/2),
+  explosion:0,
+  radius:50
+});
 if(togglesound)snd.rocket();
 }
 
-update(){
-if(this.explosion==1){
-  this.explosion=2;setTimeout(()=>{this.explosion=3;},50);
-}else if(this.explosion==3){
-  Blue.blues=Blue.blues.filter(o=>o!==this);
-}
-if(this.explosion>0)return;
-this.x+=cos(this.angle)*5;
-this.y+=sin(this.angle)*5;
-if(hypot(this.x-this.tx,this.y-this.ty)<10){
-  this.explosion=1;
-  if(togglesound)snd.explosion();
-  hitred(this.x,this.y,this.radius);
-}
+function update(){
+blues.forEach(o=>{
+  if(o.explosion==1){
+    o.explosion=2;setTimeout(()=>{o.explosion=3;},50);
+  }else if(o.explosion==3){
+    blues=blues.filter(i=>i!==o);
+  }
+  if(o.explosion>0)return;
+  o.x+=cos(o.angle)*5;
+  o.y+=sin(o.angle)*5;
+  if(hypot(o.x-o.tx,o.y-o.ty)<10){
+    o.explosion=1;
+    if(togglesound)snd.explosion();
+    hitred(o.x,o.y,o.radius);
+  }
+});
 }
 
-draw(){
-if(this.explosion>0){//explode
-  let g=cf.createRadialGradient(this.x,this.y,0,this.x,this.y,this.radius);
-  g.addColorStop(0,"gold");g.addColorStop(1,"black");
-  cf.arc(this.x,this.y,this.radius,0,PI*2);
-  cf.fillStyle=g;
-  cf.fill();
-}else{//move
-  cf.save();
-  cf.translate(this.x,this.y);
-  cf.rotate(this.angle+PI/2);
-  cf.fillStyle="lime";
-  cf.fillRect(-1,-10,2,20);
-  cf.restore();
+function draw(){
+blues.forEach(o=>{
+  if(o.explosion>0){//explode
+    let g=cf.createRadialGradient(o.x,o.y,0,o.x,o.y,o.radius);
+    g.addColorStop(0,"gold");g.addColorStop(1,"black");
+    cf.arc(o.x,o.y,o.radius,0,PI*2);
+    cf.fillStyle=g;
+    cf.fill();
+  }else{//move
+    cf.save();
+    cf.translate(o.x,o.y);
+    cf.rotate(o.angle+PI/2);
+    cf.fillStyle="lime";
+    cf.fillRect(-1,-10,2,20);
+    cf.restore();
+  }
+});
 }
-}
+
+return {getlevel,getbars,reset,nextlevel,destroyed,base,shoot,update,draw};
 
 }//end blue
 
@@ -183,71 +199,64 @@ if(this.explosion>0){//explode
 
 
 
-class Red{
-static reds=[];static level;static speed;
-static {hitred=(x,y,r)=>{Red.reds=Red.reds.filter(e=>hypot(x-e.x,y-e.y)>=r)}}
 
-static reset(){
-while(Red.reds.pop());
-Red.level=0;
+function Red(){
+let reds=[];let level;let speed;
+hitred=(x,y,r)=>reds=reds.filter(o=>hypot(x-o.x,y-o.y)>=r)
+
+function reset(){
+while(reds.pop());
+level=0;
 }
 
-static nextlevel(){
-while(Red.reds.pop());
-Red.level++;
-if(Red.level>5 && random()<(1/13)){
-  Red.speed=3;
-  for(let i=0;i<1;i++){new Red();}
+function nextlevel(){
+while(reds.pop());
+level++;
+if(level>5 && random()<(1/13)){
+  speed=3;
+  for(let i=0;i<1;i++){reds.push(L.stars(4,W/30,H*0.2));}
 }else{
-  Red.speed=L.fit(Red.level,0.5,1.5,30,1);
-  for(let i=0;i<13;i++){new Red();}
+  speed=L.fit(level,0.5,1.5,30,1);
+  for(let i=0;i<13;i++){reds.push(L.stars(13,W/50,H*0.2));}
 }
 }
 
-static destroyed(){return (Red.reds.length<1);}
-static update(){Red.reds.forEach(o=>o.update());}
-static draw(){Red.reds.forEach(o=>o.draw())}
-
-constructor(){
-this.color=Array.from({length:3},()=>floor(random()*155)+100).reduce((a,v,i)=>a+(i>0?",":"")+v,"rgb(")+")";
-this.x=random()*W;this.y=random()*W*0.2;
-this.rotation=random()*PI*2;this.rotationspeed=random()*0.05-0.025;
-this.angle=random()*(PI/3)-PI/6;
-let radius=W/50;let inner=random()*(2/3*radius);
-let path=new Path2D();
-path.moveTo(0,-radius);
-for(let i=1;i<13*2;i++){
-  let r=i%2===0?radius:inner;
-  let angle=i*PI/13;
-  let dx=r*sin(angle);
-  let dy=-r*cos(angle);
-  path.lineTo(dx,dy);
-}
-path.closePath();
-this.path=path;
-Red.reds.push(this);
+function destroyed(){
+return (reds.length<1);
 }
 
-update(){
-this.y+=cos(this.angle)*Red.speed;
-this.x+=sin(this.angle)*Red.speed;
-this.rotation+=this.rotationspeed;
-if(this.x<0)this.x=W;
-if(this.x>W)this.x=0;
-if(this.y>H){hitblue();Red.reds=Red.reds.filter(item=>item!==this);}
-
+function update(){
+reds.forEach(o=>{
+  o.y+=cos(o.angle)*speed;
+  o.x+=sin(o.angle)*speed;
+  o.rotation+=o.rotationspeed;
+  if(o.x<0)o.x=W;
+  if(o.x>W)o.x=0;
+  if(o.y>H){hitblue();reds=reds.filter(i=>i!==o);}
+});
 }
 
-draw(){
-cf.save();
-cf.translate(this.x,this.y);
-cf.rotate(this.rotation);
-cf.strokeStyle=this.color;
-cf.stroke(this.path);
-cf.restore();
+function draw(){
+reds.forEach(o=>{
+  cf.save();
+  cf.translate(o.x,o.y);
+  cf.rotate(o.rotation);
+  cf.strokeStyle=o.color;
+  cf.stroke(o.path);
+  cf.restore();
+});
 }
 
+return {reset,nextlevel,destroyed,update,draw};
 }//end red
+
+
+
+
+
+
+
+
 
 }//end game
 
@@ -360,9 +369,30 @@ function fit(x,start,asymptote,x2,y2){
   return asymptote-(asymptote-start)*Math.pow(((asymptote-y2)/(asymptote-start)),x/x2);
 }
 
+function stars(points,radius,at){
+let color=Array.from({length:3},()=>floor(random()*155)+100).reduce((a,v,i)=>a+(i>0?",":"")+v,"rgb(")+")";
+let x=random()*W;
+let y=random()*at;
+let rotation=random()*PI*2;
+let rotationspeed=random()*0.05-0.025;
+let angle=random()*(PI/3)-PI/6;
+let inner=random()*(2/3*radius);
+let path=new Path2D();
+path.moveTo(0,-radius);
+for(let i=1;i<points*2;i++){
+  let r=i%2===0?radius:inner;
+  let angle=i*PI/points;
+  let dx=r*sin(angle);
+  let dy=-r*cos(angle);
+  path.lineTo(dx,dy);
+}
+path.closePath();
+return {x:x,y:y,path:path,color:color,angle:angle,rotation:rotation,rotationspeed:rotationspeed};
+}
+
 function element(e){return document.body.appendChild(document.createElement(e));}
 
-return {Sound,canvas,speak,bars,fit};
+return {Sound,canvas,speak,bars,fit,stars};
 };//end library
 
 }//end onload
