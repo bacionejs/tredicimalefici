@@ -31,7 +31,7 @@
 - Added *sounds*. I already had a rocket sound from my Marslander game, but I needed an explosion sound. I searched for an explosion sound algorithm but wasn't satisfied with what I found. Finally, I discovered that simply adding a *lowpass filter and ramp* to my existing rocket sound did the trick.
 
 #### Day 3
-- Added a boss -- a UFO with a grinning alien that drops fast bombs. Testers (my family) didn't like the UFO, especially the grinning alien. I wasn't motivated to fix it since I preferred the previous *simplicity*, so I removed it.
+- Added a boss -- a UFO with a grinning alien that drops fast bombs. Testers (my family) didn't like the UFO, especially the grinning alien. I wasn't motivated to fix it since I preferred the previous simplicity, so I removed it.
 
 #### Day 4
 - Changed health and ammo text to **13-segment** *graphical bars*
