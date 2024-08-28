@@ -47,7 +47,7 @@
   - "You were really good"
 
 #### Day 6
-- Added a random fast level to break up the *monotony*.
+- Added a random **(1 in 13 chance)** fast level to break up the *monotony*.
 - Fixed the explosion algorithm, which was causing crashes on an old phone.
 
 #### Day 7
