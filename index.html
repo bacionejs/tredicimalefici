@@ -17,7 +17,7 @@ License: GPL
 */
 
 let floor=Math.floor,random=Math.random,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
-let  W=innerWidth,H=innerHeight;
+let W=innerWidth,H=innerHeight;
 game();
 
 
@@ -366,7 +366,7 @@ bars.pr=draw(right,W-w-10,bars.pr);
 }
 
 function fit(x,start,asymptote,x2,y2){
-  return asymptote-(asymptote-start)*Math.pow(((asymptote-y2)/(asymptote-start)),x/x2);
+return asymptote-(asymptote-start)*Math.pow(((asymptote-y2)/(asymptote-start)),x/x2);
 }
 
 function stars(points,radius,at){
