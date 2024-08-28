@@ -26,8 +26,7 @@
 - Finished the core game: bombs, rockets and explosions
 
 #### Day 2
-- Changed bombs to random *spikiness, rotation and color*
-- Changed explosions to have *gradient* fading to the background color. This removes the sharp edges.
+- Changed explosions to *linger and fade*
 - Added status text: health, ammo, score, speed, level
 - Added sounds. I already had a rocket sound from my Marslander game, but I needed an explosion sound. I searched for an explosion sound algorithm but wasn't satisfied with what I found. Finally, I discovered that simply adding a *lowpass filter and a ramp* to my existing rocket sound did the trick.
 
