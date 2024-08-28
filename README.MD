@@ -55,5 +55,7 @@
 ## Summary
 It was a lot of *fun* making this game.
 
+It was my first time using sin, cos, PI, hypot, atan2, pow, lowpass, ramp and tts. So I learned a lot.
+
 Graphics and sound were *procedurally generated*. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 
