@@ -21,7 +21,6 @@
 ---
 
 ### Competition Diary
-- Graphics and sound are procedurally generated. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 
 #### Day 1
 - Finished the core game: bombs, rockets and explosions
@@ -56,4 +55,7 @@
 - Chose a name for the game, made a youtube video, and called it a wrap.
 
 ## Summary
-This is the biggest game I've ever made, but at 3k it is perhaps too small for this competition. Anyway, I like my game and maybe others will get something out of it.
+It was a lot of fun making this game, and while I have made other games, this is the first one that my family enjoyed playing.
+
+Graphics and sound were procedurally generated. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
+
