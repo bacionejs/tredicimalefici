@@ -37,7 +37,7 @@
 - Added a *logarithmic curve-fitting algorithm* for level difficulty.
 
 #### Day 5
-- Added random **(1 in 13 chance)** victory/philosophical phrases, but the apathetic *text-to-speech* (TTS) voice made most of them sound ridiculous, so I sadly removed all but two.
+- Added *text-to-speech* (TTS) phrases.
 
 #### Day 6
 - Added a random **(1 in 13 chance)** fast level to break up the *monotony*.
