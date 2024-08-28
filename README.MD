@@ -54,7 +54,7 @@
 - Chose a name for the game, made a youtube video, and called it a wrap.
 
 ## Summary
-It was a lot of fun making this game, and while I have made other games, this is the first one that my family enjoyed playing.
+It was a lot of fun making this game, and while I have made other games, this is the first one that my family enjoys playing.
 
 Graphics and sound were procedurally generated. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 
