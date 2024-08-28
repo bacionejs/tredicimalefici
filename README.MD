@@ -53,7 +53,7 @@
 - Experimented with additional sounds and music...
 
 #### Day 7
-- I gave up on trying to make the game bigger, chose a name for the game, made a youtube video, and called it a wrap.
+- Chose a name for the game, made a youtube video, and called it a wrap.
 
 ## Summary
 This is the biggest game I've ever made, but at 3k it is perhaps too small for this competition. Anyway, I like my game and maybe others will get something out of it.
