@@ -138,12 +138,12 @@ function shoot({pageX,pageY}){
 if(count<1)return;
 count--;
 blues.push({
+  state:0,
   x:W/2,
   y:H,
   tx:pageX,
   ty:pageY,
   angle:atan2(pageY-H,pageX-W/2),
-  explosion:0,
   radius:50
 });
 if(togglesound)snd.rocket();
@@ -151,22 +151,22 @@ if(togglesound)snd.rocket();
 
 function update(){
 blues.forEach(o=>{
-  if(o.explosion==0){
+  if(o.state==0){
     o.x+=cos(o.angle)*5;
     o.y+=sin(o.angle)*5;
     if(hypot(o.x-o.tx,o.y-o.ty)<10){
-      o.explosion=1;setTimeout(()=>{o.explosion=2;},50);
+      o.state=1;setTimeout(()=>{o.state=2;},50);
       if(togglesound)snd.explosion();
       hitred(o.x,o.y,o.radius);
     }
   }
 });
-blues=blues.filter(o=>o.explosion!=2);
+blues=blues.filter(o=>o.state!=2);
 }
 
 function draw(){
 blues.forEach(o=>{
-  if(o.explosion>0){//explode
+  if(o.state>0){//explode
     let g=cf.createRadialGradient(o.x,o.y,0,o.x,o.y,o.radius);
     g.addColorStop(0,"gold");g.addColorStop(1,"black");
     cf.arc(o.x,o.y,o.radius,0,PI*2);
@@ -227,9 +227,9 @@ reds.forEach(o=>{
   o.rotation+=o.rotationspeed;
   if(o.x<0)o.x=W;
   if(o.x>W)o.x=0;
-  if(o.y>H){hitblue();o.fordeletion=true;}
+  if(o.y>H){hitblue();o.state=1;}
 });
-reds=reds.filter(o=>o.fordeletion!==true);
+reds=reds.filter(o=>o.state!==1);
 }
 
 function draw(){
