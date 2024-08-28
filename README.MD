@@ -34,7 +34,7 @@
 
 #### Day 4
 - Added health and ammo **13-segment** *graphical bars*
-- Testers experimented to determine the appropriate difficulty. Besides the minimum value (start) and maximum value (asymptote), I used one extra point and fed it into a *logarithmic curve-fitting algorithm*.
+- Added a *logarithmic curve-fitting algorithm* for level difficulty.
 
 #### Day 5
 - Added random **(1 in 13 chance)** victory/philosophical phrases, but the apathetic *text-to-speech* (TTS) voice made most of them sound ridiculous, so I sadly removed all but two.
