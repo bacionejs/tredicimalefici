@@ -16,7 +16,7 @@ Github: https://github.com/bacionejs/tredicimalefici
 License: GPL
 */
 
-let floor=Math.floor,random=Math.random,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
+let floor=Math.floor,random=Math.random,pow=Math.pow,sin=Math.sin,cos=Math.cos,PI=Math.PI,hypot=Math.hypot,atan2=Math.atan2;
 let W=innerWidth,H=innerHeight;
 game();
 
@@ -274,7 +274,7 @@ let aubexplosion=noise(1);
 
 function noise(seconds){
 let b=auc.createBuffer(1,auc.sampleRate*seconds,auc.sampleRate);
-b.getChannelData(0).forEach((_,i,a)=>a[i]=Math.random()*2-1);
+b.getChannelData(0).forEach((_,i,a)=>a[i]=random()*2-1);
 return b;
 }
 
@@ -362,7 +362,7 @@ bars.pr=draw(right,W-w-10,bars.pr);
 }
 
 function fit(x,start,asymptote,x2,y2){
-return asymptote-(asymptote-start)*Math.pow(((asymptote-y2)/(asymptote-start)),x/x2);
+return asymptote-(asymptote-start)*pow(((asymptote-y2)/(asymptote-start)),x/x2);
 }
 
 function stars(points,radius,at){
