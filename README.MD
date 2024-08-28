@@ -48,7 +48,7 @@
 - Chose a name for the game, made a *youtube video*, and called it a wrap.
 
 ## Summary
-It was *fun* making this game.
+It was fun making this game.
 
 I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp and tts*.
 
