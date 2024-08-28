@@ -49,7 +49,6 @@
 #### Day 6
 - Added a random fast level to break up the monotony.
 - The game crashes on older phones after a while, so I fixed the explosion drawing algorithm.
-- Experimented with additional sounds and music...
 
 #### Day 7
 - Chose a name for the game, made a youtube video, and called it a wrap.
