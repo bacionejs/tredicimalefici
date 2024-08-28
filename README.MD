@@ -33,14 +33,14 @@
 - Added a boss -- a UFO with a grinning alien that drops fast bombs. Testers (my family) didn't like the UFO, especially the grinning alien. I wasn't motivated to fix it since I preferred the previous simplicity, so I removed it.
 
 #### Day 4
-- Added health and ammo **13-segment** *graphical bars*
+- Added health and ammo *graphical bars*
 - Added a *logarithmic curve-fitting algorithm* for level difficulty.
 
 #### Day 5
 - Added *text-to-speech* (TTS) phrases.
 
 #### Day 6
-- Added a random **(1 in 13 chance)** fast level to break up the *monotony*.
+- Added a random fast level to break up the *monotony*.
 - Fixed the explosion algorithm, which was causing crashes on an old phone.
 
 #### Day 7
