@@ -26,7 +26,7 @@
 - Finished the core game: bombs, rockets and explosions
 
 #### Day 2
-- Changed bombs to 13 point stars with random *spikiness*, rotation and color
+- Changed bombs to 13-point stars with random *spikiness*, rotation and color
 - Changed explosions to have *gradient* fading to the background color. This removes the sharp edges.
 - Added status text: health, ammo, score, speed, level
 - Added sounds. I already had a rocket sound from my Marslander game, but I needed an explosion sound. I searched for an explosion sound algorithm but wasn't satisfied with what I found. Finally, I discovered that simply adding a *lowpass filter and a ramp* to my existing rocket sound did the trick.
@@ -38,7 +38,7 @@
 - Changed status text
   - Removed score and speed
   - Moved level to an inter-level splash screen
-  - Changed health and ammo text to *graphical bars*
+  - Changed health and ammo text to 13-segment *graphical bars*
 - Testers experimented to determine the appropriate difficulty. Besides the minimum value (start) and maximum value (asymptote), I used one extra point and fed it into a *logarithmic curve-fitting algorithm*.
 
 #### Day 5
