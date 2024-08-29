@@ -29,10 +29,10 @@
 - Added an *explosion sound*. I searched high and low 🎶 and finally discovered [lowpass filter and ramp](https://bacionejs.github.io/explosion) 🕵️‍♂️
 
 #### Day 3
-- Added a 🛸 but 💩 so 🗑️
+- Tried a 🛸 but 💩 so 🗑️
+- Added *health and ammo bars* 🚥
 
 #### Day 4
-- Added *health and ammo bars* 🚥
 - Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for *level difficulty* 📈
 
 #### Day 5
