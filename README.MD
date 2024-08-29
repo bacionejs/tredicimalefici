@@ -26,7 +26,7 @@
 - Finished the core game: bombs, rockets and explosions 💥
 
 #### Day 2
-- Added an *explosion sound*. I searched high and low and finally discovered [lowpass filter and ramp](https://bacionejs.github.io/explosion) 🕵️‍♂️
+- Added an *explosion sound*. I searched high and low 🎵 and finally discovered [lowpass filter and ramp](https://bacionejs.github.io/explosion) 🕵️‍♂️
 
 #### Day 3
 - Added a 🛸 with a grinning alien that drops fast bombs. My testers didn't like it and I wasn't motivated to fix it since I preferred the previous simplicity, so... 🗑️
