@@ -48,6 +48,6 @@ Added a boss 👾 -- a UFO with a grinning alien that drops fast bombs. My famil
 ## Summary
 It was fun making this game.
 
-I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp, tts and curve-fitting*.
+I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp, tts and curve-fitting* 📚
 
 Graphics and sound were *procedurally generated*. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
