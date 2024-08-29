@@ -32,8 +32,8 @@
 - Added a 🛸 with a grinning alien that drops fast bombs. My testers didn't like it and I wasn't motivated to fix it since I preferred the previous simplicity, so... 🗑️
 
 #### Day 4
-- Added health and ammo *bars* 🚥
-- Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for level difficulty 📈
+- Added *health and ammo bars* 🚥
+- Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for *level difficulty* 📈
 
 #### Day 5
 - Added *text-to-speech* (TTS) phrases 🗣️
