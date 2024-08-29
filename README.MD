@@ -37,7 +37,7 @@ Added a boss 👾 -- a UFO with a grinning alien that drops fast bombs. My famil
 - Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for level difficulty 🤓
 
 #### Day 5
-- Added *text-to-speech* (TTS) phrases.
+- Added *text-to-speech* (TTS) phrases 🗣️
 
 #### Day 6
 - Added a random *fast level* to break up the monotony 💤
