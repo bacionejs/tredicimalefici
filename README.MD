@@ -26,7 +26,7 @@
 - Finished the core game: bombs, rockets and explosions 💥
 
 #### Day 2
-- Added *explosion sound*. I already had a rocket sound from my Marslander game, but I needed an explosion. I searched for an algorithm but wasn't satisfied with what I found and finally discovered that simply adding a [lowpass filter and ramp](https://bacionejs.github.io/explosion) to my existing sound did the trick 🕵️‍♂️
+- Added an *explosion sound*. I already had a rocket sound from my Marslander game, but I needed an explosion. I searched for an algorithm but wasn't satisfied with what I found and finally discovered that simply adding a [lowpass filter and ramp](https://bacionejs.github.io/explosion) to my existing sound did the trick 🕵️‍♂️
 
 #### Day 3
 - Added a 🛸 with a grinning alien that drops fast bombs. My testers didn't like it and I wasn't motivated to fix it since I preferred the previous simplicity, so... 🗑️
