@@ -33,7 +33,7 @@
 Added a boss 👾 -- a UFO with a grinning alien that drops fast bombs. My family didn't like the UFO, especially the grinning alien. I wasn't motivated to fix it since I preferred the previous simplicity, so I removed it 😔
 
 #### Day 4
-- Added health and ammo *graphical bars*
+- Added health and ammo *graphical bars* 🚥
 - Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for level difficulty 🤓
 
 #### Day 5
@@ -43,11 +43,12 @@ Added a boss 👾 -- a UFO with a grinning alien that drops fast bombs. My famil
 - Added a random *fast level* to break up the monotony 💤
 
 #### Day 7
-- Chose a name for the game, made a *youtube video*, and called it a wrap 🥳
+- Chose a name for the game, made a *youtube video*, and called it a wrap 🚀
 
 ## Summary
-It was fun making this game.
+It was fun making this game 🥳
 
 I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp, tts and curve-fitting* 📚
 
-Graphics and sound were *procedurally generated*. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
+
+Graphics and sound were *procedurally generated*. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor) 🛸
