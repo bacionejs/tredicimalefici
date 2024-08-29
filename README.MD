@@ -40,7 +40,7 @@ Added a boss 👾 -- a UFO with a grinning alien that drops fast bombs. My famil
 - Added *text-to-speech* (TTS) phrases.
 
 #### Day 6
-- Added a random *fast level* to break up the monotony.
+- Added a random *fast level* to break up the monotony 💤
 
 #### Day 7
 - Chose a name for the game, made a *youtube video*, and called it a wrap 🥳
