@@ -41,7 +41,6 @@
 
 #### Day 6
 - Added a random *fast level* to break up the monotony.
-- Fixed the explosion algorithm, which was causing crashes on an old phone.
 
 #### Day 7
 - Chose a name for the game, made a *youtube video*, and called it a wrap.
