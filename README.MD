@@ -43,7 +43,7 @@ Added a boss 👾 -- a UFO with a grinning alien that drops fast bombs. My famil
 - Added a random *fast level* to break up the monotony.
 
 #### Day 7
-- Chose a name for the game, made a *youtube video*, and called it a wrap.
+- Chose a name for the game, made a *youtube video*, and called it a wrap 🥳
 
 ## Summary
 It was fun making this game.
