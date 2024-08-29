@@ -26,7 +26,7 @@
 - Finished the core game: bombs, rockets and explosions 💥
 
 #### Day 2
-- Added an *explosion sound*. I searched high and low 🎶 and finally discovered [lowpass filter and ramp](https://bacionejs.github.io/explosion) 🕵️‍♂️
+- Added a [lowpass filter and ramp](https://bacionejs.github.io/explosion) *explosion sound* 🕵️‍♂️
 
 #### Day 3
 - Added *health and ammo bars* 🚥
