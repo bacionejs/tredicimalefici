@@ -45,7 +45,7 @@
 - Chose a name for the game, made a *youtube video*, and... 🚀
 
 ## Summary
-It was fun making this game 🥳
+Making this game was 🥳
 
 I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp, tts and curve-fitting* 📚
 
