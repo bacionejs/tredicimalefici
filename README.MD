@@ -7,7 +7,7 @@
 
 - **Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)**
 - Theme: The 2024 theme is Triskaidekaphobia (fear of the number 13)
-- Goal: Win the t-shirt prize 🎯
+- Goal: Win the t-shirt prize 🏆🎉
 - Limitations: Portrait mode only
 - Controls: Click/tap
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
