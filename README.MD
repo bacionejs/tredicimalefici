@@ -38,7 +38,7 @@
 - Added *text-to-speech* (TTS) 🗣️
 
 #### Day 6
-- Added random 👾
+- Added random 😈
 
 #### Day 7
 - Chose a name for the game, made a *youtube video*, and... 🚀
