@@ -8,7 +8,7 @@
 - [Live](https://bacionejs.github.io/tredicimalefici)
 - [YouTube](http://www.youtube.com/@bacionejs)
 - [Code](https://github.com/bacionejs/tredicimalefici)
-- [Post-mortem](https://github.com/bacionejs/tredicimalefici#competition-diary)
+- [Post-mortem](https://github.com/bacionejs/tredicimalefici#post-mortem)
 
 ---
 
