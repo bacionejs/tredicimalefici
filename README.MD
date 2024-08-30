@@ -13,10 +13,7 @@
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
 - Download
-  - download index.html
-  - open your file manager
-  - click index.html to run in your browser
-  - click/tap to play
+The game is one monolithic index.html file with no external dependencies, so it is easy to download and run offline from your file manager in your browser.
 
 ---
 
