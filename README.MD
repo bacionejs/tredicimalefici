@@ -12,8 +12,7 @@
 - Controls: Click/Tap
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
-- Download
-The game is one monolithic index.html file with no external dependencies, so it is easy to download and run offline from your file manager in your browser.
+- Download: The game is one monolithic index.html file with no external dependencies, so it is easy to download and run offline from your file manager in your browser.
 
 ---
 
