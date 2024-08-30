@@ -41,7 +41,7 @@
 - Added random 😈
 
 #### Day 7
-- Chose a name for the game, made a *youtube video*, and... 🚀
+- Chose a name for the game, made a *youtube video*, and... 🎬
 
 ## Summary
 Making this game was 🥳
