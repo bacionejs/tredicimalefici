@@ -52,7 +52,9 @@ I don't like being unoriginal but I enjoy making games based on older designs. I
 
 I didn't want to spend more than a week on the game, and I'm not very good, so the game is very small. But it is beautiful and fun. Although, it could use some hectic overload to get your heart rate up or cause some rage. But alas, we have a pleasant shooter, with pleasant explosions and delicious neon vector graphics that look like candy. There IS a random boss that is an initial shock but after a couple times you have him figured out. Amidst the fantasia, a voice randomly pipes in about how well you are doing.
 
-I spent many hours creating dozens of victory and philosophical phrases, gleaned from dozens of philosophical works and massaged them to be short and pithy. But… they sounded ridiculous when spoken by the blasé text-to-speech voice. Alas, there are only 3 remaining. Time sunk.
+I spent many hours creating dozens of victory and philosophical phrases, gleaned from dozens of philosophical works and massaged them to be short and pithy. I had just bought my daughter Meditations by Marcus Aurelius and she hadn't touched it, so I conspired to put philosophy in a game. I'm too clever. Anyway, they sounded ridiculous when spoken by the blasé text-to-speech voice. So alas, there remain but three and non are philosophical. Time wasted.
+> "It is not that we have a short time to live, but that we waste a lot of it."  
+> — **Seneca**, *On the Shortness of Life*
 
 Surprisingly, I spent a large amount of time on one line of code: the logarithmic curve-fitting formula for level difficulty. Now, this might seem like an obvious formula to you, but it was a breakthrough for me. I assume everybody uses something like it to increase a game's difficulty. I was so enamored by the idea, and it seems so fundamental to gaming, that I dedicated a whole repository to it. [^3]
 
