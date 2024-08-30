@@ -9,7 +9,7 @@
 - Theme: The 2024 theme is Triskaidekaphobia (fear of the number 13)
 - Goal: Win the t-shirt prize 🏆🎉
 - Limitations: Portrait mode only
-- Controls: Click/tap
+- Controls: Click/Tap
 - Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
 - Download
