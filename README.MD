@@ -62,10 +62,10 @@ Now, I must say that I am horrified when people don't include a screenshot in th
 
 Normally, I do a screen recording on my phone and then copy it to my tablet where I crop it with ffmpeg. But in the future, I plan to use a wrapper page that simulates a phone's dimensions so it can all be done on the tablet.
 
-I’m tempted to do a diff tutorial.[^5] It is generated semi-automatically with JavaScript. Perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
+I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a JavaScript app which semi-automatically generates tutorials. And, perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
 
-[^1]: [Bacione Editor](https://github.com/bacionejs/editor)
+[^1]: [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 [^2]: [Neovim with Apache on Termux](https://github.com/bacionejs/termux)
 [^3]: [Logarithmic Curve-Fitting for Level Difficulty](https://bacionejs.github.io/difficultyalgorithm)
 [^4]: [Explosion Sound Generation](https://bacionejs.github.io/explosion)
-[^5]: [Diff Tutorial Generator](https://bacionejs.github.io/editor/Games.pdf)
+[^5]: [Ski/Marslander Tutorial](https://bacionejs.github.io/editor/Games.pdf)
