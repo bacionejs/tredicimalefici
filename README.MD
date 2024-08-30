@@ -18,33 +18,19 @@
 
 ---
 
-### Competition Diary
+## Post-mortem
 
-#### Day 1
-- Finished the core game: bombs, rockets and explosions 💥
+- Day 1: Finished the core game: bombs, rockets and explosions 💥
+- Day 2: Added a [lowpass filter and ramp](https://bacionejs.github.io/explosion) *explosion sound* 🔊
+- Day 3: Added *health and ammo bars* 🚥
+- Day 4: Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for *level difficulty* 📈
+- Day 5: Added *text-to-speech* (TTS) 🗣️
+- Day 6: Added random 😈
+- Day 7: Chose a name for the game, made a *youtube video*, and... 🎬
 
-#### Day 2
-- Added a [lowpass filter and ramp](https://bacionejs.github.io/explosion) *explosion sound* 🔊
-
-#### Day 3
-- Added *health and ammo bars* 🚥
-
-#### Day 4
-- Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for *level difficulty* 📈
-
-#### Day 5
-- Added *text-to-speech* (TTS) 🗣️
-
-#### Day 6
-- Added random 😈
-
-#### Day 7
-- Chose a name for the game, made a *youtube video*, and... 🎬
-
-## Summary
+# Summary
 Making this game was 🥳
 
 I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp, tts and curve-fitting* 📚
-
 
 Graphics and sound were *procedurally generated*. For more examples, see [Bacione JavaScript Editor](https://github.com/bacionejs/editor) 🫦
