@@ -50,7 +50,7 @@ Sooo, since I use monolithic files, I only use procedurally generated graphics a
 
 I don't like being unoriginal but I enjoy making games based on older designs. I've never done a shooting game so that was at the top of my list. But I didn't want complex controls. For example, the Asteroids’ ship is very difficult to control on mobile. So, what about a stationary ship? Well, that is sort of a missile defense game.
 
-I didn't want to spend more than a week on the game, and I'm not very good, so the game is very small. But it is beautiful and fun. Although, it could use some hectic overload to get your heart rate up or cause some rage. But alas, we have a pleasant shooter, with pleasant explosions and delicious neon vector graphics that might make you hungry. There IS a random boss that is an initial shock but after a couple times you have him figured out. Amidst the fantasia, a voice randomly pipes in about how well you are doing.
+I didn't want to spend more than a week on the game, and I'm not very good, so the game is very small. But it is beautiful and fun. Although, it could use some hectic overload to get your heart rate up or cause some rage. But alas, we have a pleasant shooter, with pleasant explosions and delicious neon vector graphics that look like candy. There IS a random boss that is an initial shock but after a couple times you have him figured out. Amidst the fantasia, a voice randomly pipes in about how well you are doing.
 
 I spent many hours creating dozens of victory and philosophical phrases, gleaned from dozens of philosophical works and massaged them to be short and pithy. But… they sounded ridiculous when spoken by the blasé text-to-speech voice. Alas, there are only 3 remaining. Time sunk.
 
