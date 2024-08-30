@@ -52,7 +52,7 @@ I don't like being unoriginal but I enjoy making games based on older designs. I
 
 I didn't want to spend more than a week on the game, and I'm not very good, so the game is very small. But it is beautiful and fun. Although, it could use some hectic overload to get your heart rate up or cause some rage. But alas, we have a pleasant shooter, with pleasant explosions and delicious neon vector graphics that look like candy. There IS a random boss that is an initial shock but after a couple times you have him figured out. Amidst the fantasia, a voice randomly pipes in about how well you are doing.
 
-I spent many hours creating dozens of victory and philosophical phrases, gleaned from dozens of philosophical works and massaged them to be short and pithy. I had just bought my daughter Meditations by Marcus Aurelius and she hadn't touched it, so I conspired to put philosophy in a game. I'm too clever. Anyway, they sounded ridiculous when spoken by the blasé text-to-speech voice. So alas, there remain but three and non are philosophical. Time wasted.
+I spent many hours creating dozens of victory and philosophical phrases, gleaned from dozens of philosophical works and massaged them to be short and pithy. I had just bought my daughter Meditations by Marcus Aurelius and she hadn't touched it, so I conspired to put philosophy in a game. I'm too clever. Anyway, they sounded ridiculous when spoken by the blasé text-to-speech voice. So alas, there remain but three, philosophy-free. Time wasted.
 > "It is not that we have a short time to live, but that we waste a lot of it."  
 > — **Seneca**, *On the Shortness of Life*
 
