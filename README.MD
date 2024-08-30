@@ -8,7 +8,7 @@
 - [Live](https://bacionejs.github.io/tredicimalefici)
 - [YouTube](http://www.youtube.com/@bacionejs)
 - [Code](https://github.com/bacionejs/tredicimalefici)
-- [Post Mortem](https://github.com/bacionejs/tredicimalefici#competition-diary)
+- [Post-mortem](https://github.com/bacionejs/tredicimalefici#competition-diary)
 
 - **Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)**
 - Theme: The 2024 theme is Triskaidekaphobia (fear of the number 13)
