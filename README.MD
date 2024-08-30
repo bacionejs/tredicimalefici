@@ -2,17 +2,19 @@
 
 *Tredici Malefici* **(13 evils)** is a missile defense 🚀 javascript game where aliens 👽 have discovered your phobia of the number 13. To exploit your fear, they drop **13 bombs** adorned with **13 spikes**. Turn the tables and use this fear to your advantage.
 
+- Controls: Click/Tap
+- Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
+- Download: The game is one monolithic index.html file with no external dependencies, so it is easy to download and run offline from your file manager in your browser.
 - [Live](https://bacionejs.github.io/tredicimalefici)
 - [YouTube](http://www.youtube.com/@bacionejs)
+- [Code](https://github.com/bacionejs/tredicimalefici)
+- [Post Mortem](https://github.com/bacionejs/tredicimalefici#competition-diary)
 
 - **Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)**
 - Theme: The 2024 theme is Triskaidekaphobia (fear of the number 13)
 - Goal: Win the t-shirt prize 🏆🎉
 - Limitations: Portrait mode only
-- Controls: Click/Tap
-- Tested on: Android phone/tablet (Chrome/Firefox), but it will probably work on anything.
 
-- Download: The game is one monolithic index.html file with no external dependencies, so it is easy to download and run offline from your file manager in your browser.
 
 ---
 
