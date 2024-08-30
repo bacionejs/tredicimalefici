@@ -13,7 +13,7 @@
 
 ---
 
-#### Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)
+- Purpose: javascript coding competition for [js13kgames](https://js13kgames.com)
 - Theme: The 2024 theme is Triskaidekaphobia (fear of the number 13)
 - Goal: Win the t-shirt prize 🏆🎉
 
