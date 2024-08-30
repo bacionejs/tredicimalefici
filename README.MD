@@ -44,7 +44,7 @@ If you read my code you might be alarmed at the formatting. Since I program on m
 
 My programs are always one monolithic file with no external dependencies. This is because Bacione is designed to run without a server, offline on Android from your file manager in your Chrome browser. I haven't had a computer for many years and at one point my solar panel was too small to charge anything bigger than a mobile device. I struggled for a while with various editors but found Neovim with Apache on Termux to be the best.[^2] But vim-motions are difficult while thumb typing on mobile. Plus I wanted to remove the server. Thus, Bacione was conceived on a remote pacific island with sparse internet, where 90% of people don't have internet or a computer. I had hoped to make Bacione in a few weeks, but months later, by the time it was finished, my daughter had lost interest in programming. Nowadays she draws. So, not wanting it to be a waste, I've tried to spread the news.
 
-So… since I use monolithic files, I only use procedurally generated graphics and sound. It was borne of necessity but I enjoy it. There is just something intrinsically appealing about vector graphics and sound generation.
+Sooo, since I use monolithic files, I only use procedurally generated graphics and sound. It was borne of necessity but I enjoy it. There is just something intrinsically appealing about vector graphics and sound generation.
 
 I don't like being unoriginal but I enjoy making games based on older designs. I've never done a shooting game so that was at the top of my list. But I didn't want complex controls. For example, the Asteroids’ ship is very difficult to control on mobile. So, what about a stationary ship? Well, that is sort of a missile defense game.
 
