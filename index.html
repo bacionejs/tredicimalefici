@@ -30,7 +30,6 @@ game();
 
 
 function game(){
-addEventListener("click",click);
 let L=Library();
 let snd=L.Sound();
 let cb=L.canvas();
@@ -41,13 +40,12 @@ let state=1;
 let togglesound=1;
 let red=Red();
 let blue=Blue();
-
 let phrases=[
 "Great job",
 "You were really good",
 ];
-
 cb.black();
+cs.canvas.addEventListener("click",click);
 cs.text("Start");
 
 function click(e){
@@ -338,6 +336,7 @@ return cn;
 }//end canvas
 
 function speak(text){
+if(!window.speechSynthesis) return;
 let synth=window.speechSynthesis;
 let utter=new SpeechSynthesisUtterance(text);
 utter.pitch=1;
