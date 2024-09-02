@@ -38,8 +38,8 @@ let cs=L.canvas();
 let hitblue,hitred;
 let state=1;
 let togglesound=1;
-let red=Red();
 let blue=Blue();
+let red=Red();
 let phrases=[
 "Great job",
 "You were really good",
@@ -53,8 +53,8 @@ if(state==0){
   blue.shoot(e);
 }else if(state==1){
   cs.clear();
-  blue.base(cb);
   blue.reset();red.reset();
+  blue.base(cb);
   animation();
   return;
 }else if(state==2){return;}else if(state==3){
@@ -126,10 +126,11 @@ return (health<1);
 
 function base(cn){
 let grad=cn.createRadialGradient((W/2),H,0,(W/2),H,(W/8));
-grad.addColorStop(0.2,"blue");
-grad.addColorStop(0.6,"black");
-grad.addColorStop(0.98,"rgb(60,60,60)");
-grad.addColorStop(1.0,"black");
+grad.addColorStop(0,"rgba(0,0,255,1)");
+grad.addColorStop(0.5,"rgba(0,0,255,0)");
+grad.addColorStop(0.68,"rgba(255,255,255,0.6)");
+grad.addColorStop(0.7,"rgba(0,0,0,0.6)");
+grad.addColorStop(1.0,"rgba(0,0,0,1)");
 cn.fillStyle=grad;cn.fillRect(0,0,W,H);
 }
 
@@ -168,7 +169,9 @@ blues.forEach(o=>{
   if(o.state>0){//explode
     let g=cf.createRadialGradient(o.x,o.y,0,o.x,o.y,o.radius);
     g.addColorStop(0,"gold");g.addColorStop(1,"black");
+    cf.beginPath();
     cf.arc(o.x,o.y,o.radius,0,PI*2);
+    cf.closePath();
     cf.fillStyle=g;
     cf.fill();
   }else{//move
