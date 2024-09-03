@@ -28,7 +28,7 @@
 - Day 4: Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for *level difficulty* 📈
 - Day 5: Added *text-to-speech* (TTS) 🗣️
 - Day 6: Added random 😈
-- Day 7: Chose a name for the game, made a *youtube video*
+- Day 7: Chose a name for the game and made a *youtube video*
 - Day 8: Added intro
 
 and... 🎬
