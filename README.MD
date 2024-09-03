@@ -28,7 +28,10 @@
 - Day 4: Added a [logarithmic curve-fitting algorithm](https://bacionejs.github.io/difficultyalgorithm) for *level difficulty* 📈
 - Day 5: Added *text-to-speech* (TTS) 🗣️
 - Day 6: Added random 😈
-- Day 7: Chose a name for the game, made a *youtube video*, and... 🎬
+- Day 7: Chose a name for the game, made a *youtube video*
+- Day 8: Added and intro
+
+and... 🎬
 
 Making this game was 🥳
 I learned how to use *sin, cos, PI, hypot, atan2, pow, lowpass, ramp, tts and curve-fitting* 📚
@@ -61,6 +64,16 @@ Surprisingly, I spent a large amount of time on one line of code: the logarithmi
 Also, surprisingly, I spent a lot of time looking for an explosion sound. Part of the problem is that when doing Google searches, the overwhelming number of links are audio files or libraries. Even when searching “procedurally generated,” or some variant of that, I still struggled finding anything. And the libraries that I did find were complex. I just wanted a snippet that was less than 5 lines. So I consulted ChatGPT. We had many long discussions. We were both patient and kind, but we gained little ground. At one point, it did suggest lowpass and ramp but the HTML page it produced didn't sound anything like an explosion. I even had it produce a page with several sliders so I could tweak the parameters live. Still no luck. Part of the problem is that overlapping ideas can hide the solution. And I was too lazy to learn enough about this particular topic to understand what I was doing. I was poking in the dark. So, once again I dedicated an entire repository to it.[^4] I even submitted it in Google Console to ensure the love spreads a little quicker.
 
 In the beginning, I started with a text status which included score, level, health, ammo, and speed. But after most debugging was completed, I really didn't need score and speed. Besides, level is a sufficient gauge of progress. Also, it isn't necessary to see the level value until the level is finished, so I moved that to the inter-level splash screen. Three down, only two left, health and ammo, and well, isn't that the standard anyway? And shouldn't they be graphical? Standard right? I need to stop being so minimalistic. I generalized the function enough to shoehorn into my library. Also, if you look close enough you will see a simple optimization. I hate bothering the CPU.
+
+When I added a glass dome as the starbase, it always seemed like there should be a party going on inside, a rave:
+  souls dancing
+  lost in good memories
+  with their brothers in arms
+  blue light pulsing to the rhythm
+  extending outward to the glass dome
+  shimmering with a hint of cosmic rays
+
+The music is inline base64 that will make you want to stand up and start dancing. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is a alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
 
 Now, I must say that I am horrified when people don't include a screenshot in their repository. So that was part of wrapping things up. Also, it is helpful to have a YouTube demo. And it is so simple to set up a live link via GitHub Pages, so why wouldn't anybody do that too?
 
