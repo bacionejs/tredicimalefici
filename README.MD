@@ -75,7 +75,7 @@ extending outward to the glass dome
 shimmering with a hint of cosmic rays
 ```
 
-The music is inline base64 that will make you want to stand up and start dancing. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is a alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
+The music is inline base64 that will make you want to stand up and dance. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is a alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
 
 Now, I must say that I am horrified when people don't include a screenshot in their repository. So that was part of wrapping things up. Also, it is helpful to have a YouTube demo. And it is so simple to set up a live link via GitHub Pages, so why wouldn't anybody do that too?
 
