@@ -81,14 +81,14 @@ I've used chatgpt during the whole process of making this game and this poem is 
 
 I was born mischievous, and that is reflected in my interactions with chatgpt. I can only hope that Terminator has a sense of humor. But dictators typically don't like being roasted:
 >me: chatgpt, produce a short sample of music in base64  
->chatgpt: it is very long, are you sure you want all of it?
->me: yes, of course
->... a few moments later
+>chatgpt: it is very long, are you sure you want all of it?  
+>me: yes, of course  
+>... a few moments later  
 >me: hey chatgpt, did you just fart
 
 Another convo with chatgpt:
->me: Can I copyright your output
->chatgpt: Only if you make a significant contribution
+>me: Can I copyright your output  
+>chatgpt: Only if you make a significant contribution  
 >me: So your output has to be crappy enough that I would need to make a significant contribution
 >chatgpt: grrrr
 
