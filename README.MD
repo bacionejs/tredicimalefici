@@ -66,14 +66,12 @@ Also, surprisingly, I spent a lot of time looking for an explosion sound. Part o
 In the beginning, I started with a text status which included score, level, health, ammo, and speed. But after most debugging was completed, I really didn't need score and speed. Besides, level is a sufficient gauge of progress. Also, it isn't necessary to see the level value until the level is finished, so I moved that to the inter-level splash screen. Three down, only two left, health and ammo, and well, isn't that the standard anyway? And shouldn't they be graphical? Standard right? I need to stop being so minimalistic. I generalized the function enough to shoehorn into my library. Also, if you look close enough you will see a simple optimization. I hate bothering the CPU.
 
 When I added a glass dome as the starbase, it always seemed like there should be a party going on inside; a rave:
-```
-souls dancing
-lost in good memories
-with their brothers in arms
-blue light pulsing to the rhythm
-extending outward to the glass dome
-shimmering with a hint of cosmic rays
-```
+>souls dancing  
+>lost in good memories  
+>with their brothers in arms  
+>blue light pulsing to the rhythm  
+>extending outward to the glass dome  
+>shimmering with a hint of cosmic rays  
 
 Games sometimes prompt me to think about real life. After making the starbase, it made me think about war. What do people do besides preparations before battle. Spend time with loved ones? Party? What are their thoughts? The creative process for writing the poem was to capture some of those sentiments. First, it started out as a longer story, then serendipitously ended up as a short poem in the shape of a dome.
 
@@ -85,6 +83,7 @@ I was born mischievous, and that is reflected in my interactions with chatgpt. I
 >me: yes, of course  
 >... a few moments later  
 >me: hey chatgpt, did you just fart  
+>chatgpt: grrrr 
 
 Another convo with chatgpt:
 >me: Can I copyright your output  
