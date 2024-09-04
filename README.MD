@@ -81,7 +81,7 @@ I've used chatgpt during the whole process of making this game and this poem is 
 
 I was born mischievous, and that is reflected in my interactions with chatgpt. I can only hope that Terminator has a sense of humor. But dictators typically don't like being roasted:
 ```
-me: chatgpt, produce a short sample of music and give it to me in base64 so i can paste it into my javascript game
+me: chatgpt, produce a short sample of music in base64
 chatgpt: it is very long, are you sure you want all of it?
 me: yes, of course
 ... a few moments later
