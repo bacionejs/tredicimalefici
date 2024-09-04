@@ -80,7 +80,7 @@ Games sometimes prompt me to think about real life. After making the starbase, i
 I've used chatgpt during the whole process of making this game and this poem is the only thing it *didn't* help me with. I was a poet before I started learning programming, and that is part of what attracts me to programming: creating with words. But, I will admit, it does seem like AI could have written my poem. Will I ever read a poem again without wondering if it is AI.
 
 I was born mischievous, and that is reflected in my interactions with chatgpt. I can only hope that Terminator has a sense of humor. But dictators typically don't like being roasted:
->me: chatgpt, produce a short sample of music in base64
+>me: chatgpt, produce a short sample of music in base64  
 >chatgpt: it is very long, are you sure you want all of it?
 >me: yes, of course
 >... a few moments later
