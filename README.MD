@@ -79,6 +79,8 @@ Games sometimes prompt me to think about real life. After making the starbase, i
 
 I've used chatgpt during the whole process of making this game and this poem is the only thing it *didn't* help me with. I was a poet before I started learning programming, and that is part of what attracts me to programming: creating with words. But, I will admit, it does seem like AI could have written my poem. Will I ever read a poem again without wondering if it is AI.
 
+I was born mischievous, and that is reflected in my interactions with chatgpt. I can only hope that Terminator has a sense of humor. But dictators typically don't like being roasted.
+
 The music is inline base64 that will make you want to stand up and dance. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is an alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
 
 Now, I must say that I am horrified when people don't include a screenshot in their repository. So that was part of wrapping things up. Also, it is helpful to have a YouTube demo. And it is so simple to set up a live link via GitHub Pages, so why wouldn't anybody do that too?
