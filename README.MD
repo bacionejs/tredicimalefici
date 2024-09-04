@@ -89,7 +89,7 @@ I was born mischievous, and that is reflected in my interactions with chatgpt. I
 Another convo with chatgpt:
 >me: Can I copyright your output  
 >chatgpt: Only if you make a significant contribution  
->me: So your output has to be crappy enough that I would need to make a significant contribution
+>me: So your output has to be crappy enough that I would need to make a significant contribution  
 >chatgpt: grrrr  
 
 The music is inline base64 that will make you want to stand up and dance. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is an alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
