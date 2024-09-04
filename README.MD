@@ -89,7 +89,7 @@ me: hey chatgpt, did you just fart
 </pre>
 
 Another convo with chatgpt:
-<pre style="background-color: #f0f0f0; padding: 10px; white-space: pre-wrap; word-wrap: break-word;">
+<pre style="background-color: #f0f0f0; padding: 10px; white-space: pre; word-wrap: break-word;">
 me: Can I copyright your output
 chatgpt: Only if you make a significant contribution
 me: So your output has to be crappy enough that I would need to make a significant contribution
