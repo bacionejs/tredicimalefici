@@ -75,7 +75,7 @@ When I added a glass dome as the starbase, it always seemed like there should be
 
 Games sometimes prompt me to think about real life. After making the starbase, it made me think about war. What do people do besides preparations before battle. Spend time with loved ones? Party? What are their thoughts? The creative process for writing the poem was to capture some of those sentiments. First, it started out as a longer story, then serendipitously ended up as a short poem in the shape of a dome.
 
-I've used chatgpt during the whole process of making this game and this poem is the only thing it *didn't* help me with. I was a poet before I started learning programming, and that is part of what attracts me to programming: creating with words. But, I will admit, it does seem like AI could have written my poem. Will I ever read a poem again without wondering if it is AI.
+I've used chatgpt during the whole process of making this game and this poem is the only thing it *didn't* help me with. I was a poet before I started learning programming, and that is part of what attracts me to programming: creating with words. But, I will admit, it does seem like AI could have written my poem. Will I ever read a poem again without wondering if it is AI?
 
 I was born mischievous, and that is reflected in my interactions with chatgpt. I can only hope that Terminator has a sense of humor. But dictators typically don't like being roasted:
 >me: chatgpt, produce a short sample of music in base64  
