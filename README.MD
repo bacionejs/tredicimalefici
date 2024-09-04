@@ -80,13 +80,21 @@ Games sometimes prompt me to think about real life. After making the starbase, i
 I've used chatgpt during the whole process of making this game and this poem is the only thing it *didn't* help me with. I was a poet before I started learning programming, and that is part of what attracts me to programming: creating with words. But, I will admit, it does seem like AI could have written my poem. Will I ever read a poem again without wondering if it is AI.
 
 I was born mischievous, and that is reflected in my interactions with chatgpt. I can only hope that Terminator has a sense of humor. But dictators typically don't like being roasted:
-```
+<pre style="background-color: #f0f0f0; padding: 10px; white-space: pre-wrap; word-wrap: break-word;">
 me: chatgpt, produce a short sample of music in base64
 chatgpt: it is very long, are you sure you want all of it?
 me: yes, of course
 ... a few moments later
 me: hey chatgpt, did you just fart
-```
+</pre>
+
+Another convo with chatgpt:
+<pre style="background-color: #f0f0f0; padding: 10px; white-space: pre-wrap; word-wrap: break-word;">
+me: Can I copyright your output
+chatgpt: Only if you make a significant contribution
+me: So your output has to be crappy enough that I would need to make a significant contribution
+chatgpt: grrrr
+</pre>
 
 The music is inline base64 that will make you want to stand up and dance. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is an alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
 
