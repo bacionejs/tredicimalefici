@@ -115,6 +115,7 @@ Creating a Music Intro with Android BandLab
    - Tap the track, click **Split**, then select the unwanted portion and click **Delete**. Repeat for the start of the track.
 
 4. **Add Fades**:
+Adding fades is crucial to avoid a popping sound. Ensure the beginning and end of the track are either at zero or on the same note.
    - Tap the track, select **Fade**, and adjust the slider to create a millisecond of fade-out at the end.
    - Repeat the process to add a fade-in at the start.
 
@@ -131,8 +132,6 @@ Creating a Music Intro with Android BandLab
 7. **Set Up Audio Looping in JavaScript**:
    - In JavaScript, set the audio context buffer source to `loop=true`.
 
-### Important Note:
-Adding fades is crucial to avoid a popping sound. Ensure the beginning and end of the track are either at zero or on the same note.
 
 [^1]: [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 [^2]: [Neovim with Apache on Termux](https://github.com/bacionejs/termux)
