@@ -100,7 +100,8 @@ Normally, I do a screen recording on my phone and then copy it to my tablet wher
 
 I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a JavaScript app which semi-automatically generates tutorials. And, perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
 
-## Developer Notes: Creating a Music Intro with Android BandLab
+## Developer Notes
+Creating a Music Intro with Android BandLab
 
 ### Steps to Create and Integrate the Music Intro:
 1. **Open BandLab**:
