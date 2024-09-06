@@ -122,12 +122,13 @@ Adding fades is crucial to avoid a popping sound. Ensure the beginning and end o
 5. **Export the Track**:
    - Long-press the left side of the track, and select **Export** to **M4A**.
 
-6. **Convert and Embed the Audio**:
+6. **Convert and Embed the Audio**:  
+Most people won't need the base64 step, but I'm **monolithic**.
    - Compress the file (30k to 3k) using `ffmpeg` and convert it to Base64 format:
      ```bash
      ffmpeg -i input.m4a -ar 8000 -ac 1 -b:a 8k -f mp3 pipe:1 | base64
      ```
-   - Paste the Base64 string into the HTML.
+   - Paste the Base64 string into the HTML
 
 7. **Set Up Audio Looping in JavaScript**:
    - In JavaScript, set the audio context buffer source to `loop=true`.
