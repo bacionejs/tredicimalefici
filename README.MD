@@ -103,7 +103,7 @@ I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a 
 ## Developer Notes
 Creating a Music Intro with Android BandLab
 
-### Steps to Create and Integrate the Music Intro:
+### How I Created and Integrated the Music Intro:
 1. **Open BandLab**:
    - Click **+**, go to **Looper**, and select **4am Techno**.
 
