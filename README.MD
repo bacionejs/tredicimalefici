@@ -17,7 +17,7 @@
 ## Purpose
 - Competition: [js13kgames](https://js13kgames.com)
 - Theme: The 2024 theme is Triskaidekaphobia (fear of the number 13)
-- Goal: Win the t-shirt prize 🏆🎉
+- Goal: Win a t-shirt 🏆🎉
 
 ---
 
