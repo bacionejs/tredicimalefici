@@ -10,6 +10,7 @@
 - [YouTube](http://www.youtube.com/@bacionejs)
 - [Code](https://github.com/bacionejs/tredicimalefici)
 - [Post-mortem](https://github.com/bacionejs/tredicimalefici#post-mortem)
+- [Developer Notes](https://github.com/bacionejs/tredicimalefici#developer-notes)
 
 ---
 
