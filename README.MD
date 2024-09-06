@@ -125,7 +125,7 @@ Adding fades is crucial to avoid a popping sound. Ensure the beginning and end o
 6. **Convert and Embed the Audio**:
    - Compress the file using `ffmpeg` and convert it to Base64 format:
      ```bash
-     ffmpeg -i input.m4a -ar 8000 -ac 1 -b:a 8k | base64
+     ffmpeg -i input.m4a -ar 8000 -ac 1 -b:a 8k -f mp3 pipe:1 | base64
      ```
    - Paste the Base64 string into the HTML.
 
