@@ -99,6 +99,17 @@ Normally, I do a screen recording on my phone and then copy it to my tablet wher
 
 I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a JavaScript app which semi-automatically generates tutorials. And, perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
 
+## Developer Notes
+How I created the music intro for my game using Android BandLab.
+- Click +, looper, select 4am techno, select beats, bass and kick
+- Click record. After 3 seconds stop the recording and close that view to see the edit view.
+- Move the the time bar to a good trim line. Click the track. Click split. Click the unwanted split and click delete. Do the same to the start.
+- Click the track, click fade, move the slider to create a millisecond of fadeout at the end. Do it again for the start.
+- Longpress on the left of the track and select export to audio.
+- In your javascript set your audio context buffer source to loop=true
+
+The fade is important, otherwise you will hear popping; the beginning and end must be zero or the same note.
+
 [^1]: [Bacione JavaScript Editor](https://github.com/bacionejs/editor)
 [^2]: [Neovim with Apache on Termux](https://github.com/bacionejs/termux)
 [^3]: [Logarithmic Curve-Fitting for Level Difficulty](https://bacionejs.github.io/difficultyalgorithm)
