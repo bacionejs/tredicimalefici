@@ -101,7 +101,8 @@ I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a 
 
 ## Developer Notes
 How I created the music intro for my game using Android BandLab.
-- Click +, looper, select 4am techno, select beats, bass and kick
+- Click +, looper, select 4am techno
+- Select beats, bass and kick
 - Click record. After 3 seconds stop the recording and close that view to see the edit view.
 - Move the the time bar to a good trim line. Click the track. Click split. Click the unwanted split and click delete. Do the same to the start.
 - Click the track, click fade, move the slider to create a millisecond of fadeout at the end. Do it again for the start.
