@@ -130,7 +130,7 @@ requestAnimationFrame(animation);
 
 function Base(){
 let stopflag=false,b,n,c=new AudioContext();
-fetch(base64audio()).then(r=>r.arrayBuffer()).then(a=>c.decodeAudioData(a)).then(d=>{b=d;});
+fetch(jam()).then(r=>r.arrayBuffer()).then(a=>c.decodeAudioData(a)).then(d=>{b=d;});
 
 function stop(){
 stopflag=true;
@@ -463,15 +463,25 @@ function element(e){return document.body.appendChild(document.createElement(e));
 return {Sound,canvas,speak,bars,fit,stars};
 };//end library
 
+function jam(){
+let bytebeat=(t)=>((((t*((0x64>>(((t>>13)&15)*4))&15))/4)*((0x59>>((t>>11)&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);
+let q=8000,end=4.1;
+let a=Array.from({length:q*end},(_,t)=>(bytebeat(t)&0xFF)*256);
+let b=(n)=>Array.from({length:4},(_,i)=>(n>>(i*8))&0xFF);
+let wav=[].concat(
+  [..."RIFF"].map(c=>c.charCodeAt(0)),
+  b(36+a.length*2),
+  [..."WAVE"].map(c=>c.charCodeAt(0)),
+  [..."fmt "].map(c=>c.charCodeAt(0)),
+  b(16),[1,0],[1,0],b(q),b(q*2),[2,0],[16,0],
+  [..."data"].map(c=>c.charCodeAt(0)),
+  b(a.length*2),
+  a.flatMap(v=>[v&0xFF,(v>>8)&0xFF])
+).map(v=>`%${v.toString(16).padStart(2,'0')}`).join('').toUpperCase();
+return`data:audio/x-wav,${wav}`;
+}
 
-
-
-
-
-
-
-
-function base64audio(){
+function jam2(){
 return `data:audio/mp3;base64,
 SUQzBAAAAAACC1RYWFgAAAASAAADbWFqb3JfYnJhbmQATTRBIABUWFhYAAAAEwAAA21pbm9yX3Zl
 cnNpb24ANTEyAFRYWFgAAAAcAAADY29tcGF0aWJsZV9icmFuZHMAaXNvbWlzbzIAVFhYWAAAAH8A
