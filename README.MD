@@ -229,9 +229,8 @@ function jam(c){
 
 
 
-Creating a Music Intro with Android BandLab
 
-### How I Created and Integrated the Music Intro:
+### How to Create Music with BandLab:
 1. **Open BandLab**:
    - Click **+**, go to **Looper**, and select **4am Techno**.
 
