@@ -209,10 +209,40 @@ onload = () => {
 }
 ```
 
+### Bytebeat Music Version #2
+This is another way of formatting RIFF
+```javascript
+onload=()=>{
 
+function jam(){
+let bytebeat=(t)=>((((t*((0x64>>(((t>>13)&15)*4))&15))/4)*((0x59>>((t>>11)&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);
+let q=8000,end=4.1;
+let a=     Array.from({length:q*end},(_,i)=>(bytebeat(i)&0xFF)*256);
+let b=(n)=>Array.from({length:4}    ,(_,i)=>(n>>(i*8))  &0xFF);
+let wav=[].concat(
+  [..."RIFF"]    .map(c=>c.charCodeAt(0)),b(36+a.length*2),
+  [..."WAVEfmt "].map(c=>c.charCodeAt(0)),b(16),[1,0],[1,0],b(q),b(q*2),[2,0],[16,0],
+  [..."data"]    .map(c=>c.charCodeAt(0)),b(a.length*2),
+  a.flatMap(v=>[v&0xFF,(v>>8)&0xFF])
+).map(v=>`%${v.toString(16).padStart(2,'0')}`).join('').toUpperCase();
+return`data:audio/x-wav,${wav}`;
+}
 
-### Bytebeat Music Small Version
-In the larger application, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.
+let e=document.body.appendChild(document.createElement("button"));
+e.textContent="Download";
+e.addEventListener('click',function (){
+  let wav=jam();
+  let link=document.createElement('a');
+  link.href=wav;
+  link.download=`jam${Date.now()}.wav`;
+  link.click();
+});
+
+}
+```
+
+### Bytebeat Music Version #3
+In the code above, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.
 ```javascript
 onload=()=>{
 
