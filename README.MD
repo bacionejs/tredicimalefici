@@ -205,7 +205,8 @@ onload = () => {
         button.innerText = text;
         return button;
     }
-};
+
+}
 ```
 
 
@@ -241,7 +242,8 @@ onload=()=>{
       e.textContent="Play";
     }
   });
-  }
+
+}
 ```
 
 
