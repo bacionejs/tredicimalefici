@@ -212,7 +212,7 @@ onload = () => {
 
 ### Small Version
 In the larger application, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.
-```
+```javascript
 onload=()=>{
 
   function jam(c){
