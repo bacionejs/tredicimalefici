@@ -244,19 +244,6 @@ onload=()=>{
   }
 ```
 
-### Game Version
-```javascript
-function jam(c){
-  let b=t=>((((t*((0x64>>((t>>13&15)*4))&15))/4)*((0x59>>(t>>11&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);
-  let r,t,o=8000,u=2.1,v=o*u,w=new Float32Array(v);
-  for(t=0;t<w.length;w[t++]=(b(t)&255)/128-1);
-  let e=c.createBuffer(1,w.length,o);
-  r=e.getChannelData(0);
-  for(t=0;t<w.length;r[t++]=w[t]);
-  return e;
-}
-```
-
 
 
 
