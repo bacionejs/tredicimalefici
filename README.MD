@@ -244,7 +244,7 @@ onload=()=>{
   }
 ```
 
-## Game Version
+### Game Version
 ```javascript
 function jam(c){
   let b=t=>((((t*((0x64>>((t>>13&15)*4))&15))/4)*((0x59>>(t>>11&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);
