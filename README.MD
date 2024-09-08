@@ -101,7 +101,7 @@ Normally, I do a screen recording on my phone and then copy it to my tablet wher
 I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a JavaScript app which semi-automatically generates tutorials. And, perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
 
 ## Developer Notes
-### Bytebeats
+### Bytebeat Music
 
 This JavaScript code generates audio using a bytebeat formula and allows for various controls such as generating the audio, playing it once, looping it, and downloading it as a `.wav` file. 
 
