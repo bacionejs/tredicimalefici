@@ -206,6 +206,7 @@ onload = () => {
         return button;
     }
 };
+```
 
 ### Small Version
 The `jam` function is streamlined to only handle playback and looping. It uses formatting with 1-character variable names, no whitespace in lines, no blank lines, and no comments. In the larger application, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in the `jam` function, as its purpose is real-time sound generation for immediate playback within the game.
@@ -220,7 +221,7 @@ function jam(c){
   for(t=0;t<w.length;r[t++]=w[t]);
   return e;
 }
-
+```
 
 
 
