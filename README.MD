@@ -277,7 +277,7 @@ e.addEventListener('click',function (){
 }
 ```
 #### Note
-- Version #1 was written by Chatgpt based on this prompt:
+- Version #1 was written by Chatgpt based on this prompt:  
 create javascript.  
 buttons: generate, play once, loop, stop, download  
 purpose: produce a pcm wav  
