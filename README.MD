@@ -282,7 +282,7 @@ e.addEventListener('click',function (){
 >buttons: generate, play once, loop, stop, download  
 >purpose: produce a pcm wav  
 >settings: 16-bit, 8kHz, mono, duration 4.1  
->downloads: jam<timestamp>.wav  
+>downloads: jam_timestamp.wav  
 >bytebeat: let bytebeat=(t)=>((((t*((0x64>>(((t>>13)&15)*4))&15))/4)*((0x59>>((t>>11)&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);  
 
 - Version #2 was many hours of refactoring  
