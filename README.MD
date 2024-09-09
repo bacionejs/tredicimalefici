@@ -208,7 +208,7 @@ onload = () => {
 }
 ```
 
-### Bytebeat Music Version #2
+### Bytebeat Music Tester Version #2
 This is another way of formatting RIFF
 ```javascript
 onload=()=>{
