@@ -6,11 +6,14 @@
 - Controls: Click/Tap
 - Tested on: Android phone/tablet (Chrome/Firefox) in portrait mode.
 - Download: The game is one monolithic index.html file with no external dependencies, so it is easy to download and run offline from your file manager in your browser.
-- [Live](https://bacionejs.github.io/tredicimalefici)
-- [YouTube](http://www.youtube.com/@bacionejs)
-- [Code](https://github.com/bacionejs/tredicimalefici)
-- [Post-mortem](https://github.com/bacionejs/tredicimalefici#post-mortem)
-- [Developer Notes](https://github.com/bacionejs/tredicimalefici#developer-notes)
+- 💃 [Live](https://bacionejs.github.io/tredicimalefici)
+- 🍔 [YouTube](http://www.youtube.com/@bacionejs)
+- 🍕 [Code](https://github.com/bacionejs/tredicimalefici)
+- 🍨 [Post-mortem](https://github.com/bacionejs/tredicimalefici#post-mortem)
+- 🍩 [Developer Notes](https://github.com/bacionejs/tredicimalefici#developer-notes)
+
+Note:
+- You may have to play the game a long time before encountering difficult speeds, bosses and voices 🐲
 
 ---
 
