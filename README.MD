@@ -101,7 +101,7 @@ Normally, I do a screen recording on my phone and then copy it to my tablet wher
 I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a JavaScript app which semi-automatically generates tutorials. And, perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
 
 ## Developer Notes
-### Bytebeat Music Version #1
+### Bytebeat Music Tester Version #1
 This JavaScript code generates audio using a bytebeat formula and allows for various controls such as generating the audio, playing it once, looping it, and downloading it as a `.wav` file. 
 
 - **Bytebeat Formula**: The core of the sound generation relies on the bytebeat function, which takes a time value `t` and applies a mathematical expression to produce a sound signal.
@@ -240,7 +240,7 @@ e.addEventListener('click',function (){
 }
 ```
 
-### Bytebeat Music Version #3
+### Bytebeat Music Real-time Player Version #3
 In the code above, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.
 ```javascript
 onload=()=>{
