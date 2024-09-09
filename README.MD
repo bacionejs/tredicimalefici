@@ -295,7 +295,7 @@ e.addEventListener('click',function (){
 >bytebeat: ```let bytebeat=(t)=>((((t*((0x64>>(((t>>13)&15)*4))&15))/4)*((0x59>>((t>>11)&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);```  
 
 - Version #2 was a few hours of refactoring  
-- Version #3 was chatgpt codegolfing off its first version  
+- Version #3 was chatgpt codegolfing off Version #1  
 
 
 
