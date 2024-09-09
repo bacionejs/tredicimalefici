@@ -244,6 +244,7 @@ e.addEventListener('click',function (){
 In the code above, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.  
 
 You can find hundreds of bytebeats on the internet.  
+
 ```javascript
 onload=()=>{
 
@@ -258,6 +259,7 @@ for(t=0;t<w.length;r[t++]=w[t]);
 return e;
 }
 
+(function tester(){
 let c,e=document.body.appendChild(document.createElement("button"));
 e.textContent="Play";
 e.addEventListener('click',function (){
@@ -276,6 +278,7 @@ e.addEventListener('click',function (){
     e.textContent="Play";
   }
 });
+})();
 
 }
 ```
