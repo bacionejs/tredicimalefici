@@ -92,7 +92,7 @@ Another convo with chatgpt:
 >me: So your output has to be crappy enough that I would need to make a significant contribution  
 >chatgpt: grrrr  
 
-The music is inline base64 that will make you want to stand up and dance. By adding a fade in/out it doesn't glitch in a loop. The pulsing neon blue of the rave is an alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
+The intro music is [Bytebeat](#bytebeat-music-real-time-player-version-3). The pulsing neon blue of the rave is an alpha adjusted gradient loop on canvas. A more obvious choice is css animation but I do everything on canvas for consistency.
 
 Now, I must say that I am horrified when people don't include a screenshot in their repository. So that was part of wrapping things up. Also, it is helpful to have a YouTube demo. And it is so simple to set up a live link via GitHub Pages, so why wouldn't anybody do that too?
 
