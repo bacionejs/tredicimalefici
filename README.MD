@@ -241,35 +241,38 @@ e.addEventListener('click',function (){
 ```
 
 ### Bytebeat Music Real-time Player Version #3
-In the code above, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.
+In the code above, the RIFF (Resource Interchange File Format) code is responsible for exporting the generated audio as a WAV file. However, this functionality is unnecessary in real-time sound generation for immediate playback.  
+
+You can find hundreds of bytebeats on the internet.  
 ```javascript
 onload=()=>{
 
-function jam(c){
-let b=t=>((((t*((0x64>>((t>>13&15)*4))&15))/4)*((0x59>>(t>>11&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);
-let r,t,o=8000,u=2.1,v=o*u,w=new Float32Array(v);
-for(t=0;t<w.length;w[t++]=(b(t)&255)/128-1);
+let bytebeat=t=>((((t*((0x64>>((t>>13&15)*4))&15))/4)*((0x59>>(t>>11&63))&1))&64)|(t>>4)|((t*(42&(t>>10)))&32);
+
+function bytebeatplayer(c,duration){
+let r,t,o=8000,v=o*duration,w=new Float32Array(v);
+for(t=0;t<w.length;w[t++]=(bytebeat(t)&255)/128-1);
 let e=c.createBuffer(1,w.length,o);
 r=e.getChannelData(0);
 for(t=0;t<w.length;r[t++]=w[t]);
 return e;
 }
 
-let e=document.body.appendChild(document.createElement("button")),a=null,s=null;
+let c,e=document.body.appendChild(document.createElement("button"));
 e.textContent="Play";
 e.addEventListener('click',function (){
-  if(!a||a.state==="closed"){
-    a=new AudioContext;
-    let b=jam(a);
-    s=a.createBufferSource();
+  if(!c||c.state==="closed"){
+    c=new AudioContext;
+    let b=bytebeatplayer(c,2.1);
+    s=c.createBufferSource();
     s.buffer=b;
-    s.connect(a.destination);
+    s.connect(c.destination);
     s.loop=true;
     s.start();
     e.textContent="Stop";
   }else{
     s.stop();
-    a.close();
+    c.close();
     e.textContent="Play";
   }
 });
