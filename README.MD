@@ -99,8 +99,6 @@ The intro music is [Bytebeat](#bytebeat-music-real-time-player-version-3). The p
 
 Now, I must say that I am horrified when people don't include a screenshot in their repository. So that was part of wrapping things up. Also, it is helpful to have a YouTube demo. And it is so simple to set up a live link via GitHub Pages, so why wouldn't anybody do that too?
 
-Normally, I do a screen recording on my phone and then copy it to my tablet where I crop it with ffmpeg. But in the future, I plan to use a wrapper page that simulates a phone's dimensions so it can all be done on the tablet.
-
 I’m tempted to do a tutorial like I did for Ski and Marslander.[^5] I wrote a JavaScript app which semi-automatically generates tutorials. And, perhaps I should put the generator in a repository for others to use. I also have a generator for YouTube demos. So the toolbox of utilities seems to keep growing. Isn't that always the case?
 
 ## Developer Notes
